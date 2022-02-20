@@ -1,0 +1,30 @@
+export const nav = document.querySelector("nav");
+export const main = document.querySelector("main");
+export     const canvas = main.querySelector('canvas');
+export     const hero = document.querySelector("#hero");
+export     const about = document.querySelector("#about");
+export         const aboutContentWrapper = about.querySelector('.aboutContentWrapper');
+export     const watch = document.querySelector('#watch');
+export         const seasonsHeader = watch.querySelector('.seasonsHeader');
+export             const seasonDetails = seasonsHeader.querySelector('.seasonDetails');
+export                 const seasonPoster = seasonDetails.querySelector('.poster img');
+export                 const seasonText = seasonDetails.querySelector('.texts');
+export                     const seasonTextH = seasonText.querySelector('h3');
+export                     const seasonTextP = seasonText.querySelector('p');
+export             const seasonsDropdown = watch.querySelector('.seasonsDropdown');
+export         const seasonEpisodes = watch.querySelector('.seasonEpisodes');
+export     const characters = document.querySelector('#characters');
+export         const charactersDropdown = characters.querySelector('.charactersDropdown');
+export             const charactersDropdownContents = charactersDropdown.querySelector('.charactersDropdownContent');
+export                 const charactersDropdownbuttons = Array.from(charactersDropdownContents.querySelector('input'));
+export         const charactersContainer = characters.querySelector('.charactersContainer');
+export         const characterDetails = characters.querySelector('.characterDetails');
+export             const close = characterDetails.querySelector('button');
+export     const movies = document.querySelector('#movies');
+
+export const scrollArrow = document.querySelector("#ScrollArrow");
+export const scrollBody = scrollArrow.querySelector(".Body");
+export const scrollHead = scrollArrow.querySelector(".Head");
+ 
+export const seasonButtons = Array.from(document.querySelectorAll(".seasonsDropdownContent input"));
+export const charactersButtons = Array.from(document.querySelectorAll(".charactersDropdownContent input"));

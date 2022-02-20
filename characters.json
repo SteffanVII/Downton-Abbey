@@ -70,48 +70,173 @@
     "middle" : {
         "Matthew Crawley" : {
             "name": "Matthew Crawley",
-            "portrait" : "Assets/Characters/",
-            "details" : [],
+            "portrait" : "Assets/Characters/Matthew_Crawley.jpg",
+            "details" : ["Matthew Reginald Crawley (b. 1885 - September 1921) was a lawyer from Manchester and the only son of the late Doctor Reginald Crawley and of his nurse wife, Isobel. By his father he was a distant relative of the Earls of Grantham and he became the heir of the title due the heir's death. Matthew then met his third-cousin, once removed, Robert Crawley, 7th Earl of Grantham, and moved to Downton a few months after where he met and quickly fell in love with Robert's eldest daughter, Mary. He and Lady Mary Crawley entered a tumultuous eight-year relationship ending with Matthew's second proposal in early January 1920. Mary finally accepted, five and a half years after the first. They were married in May 1920 and lived together in Downton Abbey. Matthew became co-owner of the estate following the Crawleys' financial problems arising from bad investments, when Matthew was able to come to the rescue investing the money inherited from his late fiancée's father to Downton. Mary soon became pregnant and gave birth in September 1921 to their son, George Crawley. Unfortunately, Matthew was killed shortly afterwards in a car accident after a visit to his wife and newborn son at the hospital, making George the heir of the title, earldom, estate, and fortune."],
+            "quote" : "\"I will love you until the last breath leaves my body.\" —Matthew to his wife, Mary Crawley"
+        },
+        "Tom Branson" : {
+            "name": "Tom Branson",
+            "portrait" : "Assets/Characters/Tombranson.jpg",
+            "details" : ["Tom Branson, (born between September 1884 and September 1885), is the former chauffeur and the current estate manager for Downton Abbey.", "He is an Irish socialist and a member of the Branson family. He is the husband of the late Lady Sybil Branson, with whom he had one child, a daughter, Sybbie, whom he named after his wife. It is clear that even years later, he never truly recovered from Sybil’s death.", "Through his marriage he became the son-in-law of Robert Crawley and his wife, Cora. He is also brother-in-law to Matthew Crawley, Mary Talbot, Edith Pelham, Henry Talbot, and Herbert Pelham; and through them he has a nephew, George Crawley, and two nieces, Marigold (last name could be Crawley/Gregson/Drewe) and Caroline Talbot. He has at least one brother, Kieran."],
+            "quote" : "\"The one thing you will never understand about Tom is that he's not a snob! He's less interested in all that than anyone else under this roof!\" —Lady Grantham to her husband about their son-in-law."
+        },
+        "Richard Clarkson" : {
+            "name": "Richard Clarkson",
+            "portrait" : "Assets/Characters/RichardClarkson.jpg",
+            "details" : ["Dr Richard Clarkson is the local doctor for the Crawley family, having known Mary, Edith, and Sybil since they were girls."],
             "quote" : ""
         },
-        "Matthew Crawley" : {
-            "name": "Matthew Crawley",
-            "portrait" : "Assets/Characters/",
-            "details" : [],
-            "quote" : ""
+        "Martha Levinson" : {
+            "name": "Martha Levinson",
+            "portrait" : "Assets/Characters/MarthaLevinson.png",
+            "details" : ["Martha Levinson is the widow of Isidore Levinson and the mother of Cora Crawley, Countess of Grantham, and Harold Levinson."],
+            "quote" : "\"I'm a modern. I don't hanker for those days before the war. And I don't really want to spend the rest of my life among people who think me loud and opinionated and common.\" —Martha in 1923."
         },
-        "Matthew Crawley" : {
-            "name": "Matthew Crawley",
-            "portrait" : "Assets/Characters/",
-            "details" : [],
-            "quote" : ""
+        "Harold Levinson" : {
+            "name": "Harold Levinson",
+            "portrait" : "Assets/Characters/HaroldLevinson.png",
+            "details" : ["Harold Levinson (b. 1860s or 1870s) is Cora's brother who lives in the United States.  He is the son of Martha and the late Isidore Levinson. Harold is described as \"free spirited\" and a playboy."],
+            "quote" : "\"I would find it hard to respect any woman who wished to marry me.\" —Harold to Madeleine Allsopp"
         },
-        "Matthew Crawley" : {
-            "name": "Matthew Crawley",
-            "portrait" : "Assets/Characters/",
-            "details" : [],
-            "quote" : ""
+        "Charles Blake" : {
+            "name": "Charles Blake",
+            "portrait" : "Assets/Characters/CharlesBlake.jpg",
+            "details" : ["Charles Blake is working for the government studying how large estates, such as Downton Abbey, are enduring the changes of society post-war. He is Evelyn Napier's boss. He and Napier are invited to stay at Downton in 1922."],
+            "quote" : "\"Mr Lloyd George is more concerned with feeding the population than rescuing the aristocracy. It doesn't seem mean-spirited to me.\" —Charles Blake"
         },
-        "Matthew Crawley" : {
-            "name": "Matthew Crawley",
-            "portrait" : "Assets/Characters/",
-            "details" : [],
-            "quote" : ""
-        },
-        "Matthew Crawley" : {
-            "name": "Matthew Crawley",
-            "portrait" : "Assets/Characters/",
-            "details" : [],
-            "quote" : ""
-        },
-        "Matthew Crawley" : {
-            "name": "Matthew Crawley",
-            "portrait" : "Assets/Characters/",
-            "details" : [],
-            "quote" : ""
+        "Sarah Bunting" : {
+            "name": "Sarah Bunting",
+            "portrait" : "Assets/Characters/bunting.jpg",
+            "details" : ["Sarah Bunting is a schoolteacher at a grammar school in Preston, Lancashire. She formerly lived in the village of in Downton in Yorkshire. She teaches language, spelling, and mathematics."],
+            "quote" : "\"All I'm asking is for you to remember that you were the man who tempted her towards the park wall to run away to freedom. You can be that same man you were.\" —to Tom Branson, regarding his past"
         }
     },
     "servants" : {
-
+        "Charles Carson" : {
+            "name" : "Charles Carson",
+            "portrait" : "Assets/Characters/Charlescarson.jpg",
+            "details" : ["Charles Ernest Carson (b. 1856) was the butler of Downton Abbey and began working at Downton Abbey as a Second Footman at the age of 19. He lived at the estate to witness the birth of Robert and Cora's three daughters: Mary, Edith and Sybil.", "In May 1925, he married Elsie Hughes, the head housekeeper at Downton. Seven months later, he handed in his resignation, after suffering from palsy, where Thomas Barrow took his place as the butler."],
+            "quote": "\"If you're tired of style, you're tired of life.\" —to Elsie Hughes"
+        },
+        "Elsie Hughes" : {
+            "name" : "Elsie Hughes",
+            "portrait" : "Assets/Characters/Elsiehughescarson.jpg",
+            "details" : ["Elsie May Carson (née Hughes; b.1862) is the head housekeeper and she is in charge of all the female servants. More or less, she runs the entire servant branch of Downton Abbey alongside Thomas Barrow, after he replaced her husband, Charles Carson, as butler. She is very stoic, but is also ethical and never two-sided."],
+            "quote": ""
+        },
+        "Anna Bates" : {
+            "name" : "Anna Bates",
+            "portrait" : "Assets/Characters/Anna_Bates.png",
+            "details" : ["Anna May Bates (née Smith; born 1886) was head housemaid at Downton Abbey and is currently lady's maid to Lady Mary Crawley. She is also the wife of John Bates. She gave birth to their son on New Year's Eve, 1925."],
+            "quote": ""
+        },
+        "John Bates" : {
+            "name" : "John Bates",
+            "portrait" : "Assets/Characters/john_Bates.png",
+            "details" : ["John Bates (born 1869) is Robert Crawley's valet. Initially he is poorly treated by most of the staff due to the fact that he uses a cane (he was wounded in the Boer War). Thomas Barrow and Sarah O'Brien make several attempts to get rid of him. Despite this, he is eventually able to earn the respect of much of the staff, such as Anna Smith and Mr Carson, who are impressed by his morals and work ethic, despite his disability."],
+            "quote": ""
+        },
+        "Beryl Patmore" : {
+            "name" : "Beryl Patmore",
+            "portrait" : "Assets/Characters/Mrs_Patmore.png",
+            "details" : ["Beryl Patmore is the cook at Downton Abbey and she believes that she runs the house, although Charles Carson and Elsie Hughes beg to differ. She is forever ordering about Daisy Mason, her assistant cook. She is a kind hearted and motherly figure to the cooking staff. Though quick to correct mistakes and sometimes a bit harsh she loves her coworkers like family."],
+            "quote": ""
+        },
+        "Daisy Mason" : {
+            "name" : "Daisy Mason",
+            "portrait" : "Assets/Characters/Daisy.png",
+            "details" : ["Daisy Mason (née Robinson) is an assistant cook (formerly kitchen maid) at Downton Abbey and the widow of William Mason. She lives under the strict but caring eye of Mrs Patmore, the cook. Daisy was usually seen in a light pink dress while being a kitchen maid. She later wore grey when she was promoted to kitchen assistant. "],
+            "quote": ""
+        },
+        "Thomas Barrow" : {
+            "name" : "Thomas Barrow",
+            "portrait" : "Assets/Characters/Thomasbarrow.jpg",
+            "details" : ["Thomas Barrow is the current butler, succeeding Charles Carson at Downton Abbey, having formerly worked there as junior footman, first footman, head valet, and under-butler, as well as serving in the army as a Corporal and later Lance Sergeant. He arrived at Downton in 1910, indicating in 1920 he had worked there for ten years."],
+            "quote": ""
+        },
+        "Joseph Molesley" : {
+            "name" : "Joseph Molesley",
+            "portrait" : "Assets/Characters/Mr_Molesley.png",
+            "details" : ["Joseph Molesley (b. 1873) is a butler who at first works at Crawley House in Downton village. Later he goes to work at Downton Abbey as Matthew Crawley's valet until the latter's death. After some time away, he returned to Downton as footman, despite moving down the ranks. After helping Daisy with her studies, Molesley took the position as a teacher at the Downton School, returning to Downton Abbey to be a footman for larger events and parties."],
+            "quote": ""
+        },
+        "Phyllis Baxter" : {
+            "name" : "Phyllis Baxter",
+            "portrait" : "Assets/Characters/Mrs_Baxter.png",
+            "details" : ["Phyllis Baxter is the Countess of Grantham's lady's maid at Downton Abbey."],
+            "quote": ""
+        },
+        "Andrew Parker" : {
+            "name" : "Andrew Parker",
+            "portrait" : "Assets/Characters/Andy_Parker.jpg",
+            "details" : ["Andrew \"Andy\" Parker (b. 1907) is a temporary footman hired in the summer of 1924 to work at Grantham House in London for the week of Lady Rose's wedding. He officially joins the staff at Downton Abbey as the second footman sometime before Christmas of that same year."],
+            "quote": ""
+        },
+        "Gladys Denker" : {
+            "name" : "Gladys Denker",
+            "portrait" : "Assets/Characters/GladysDenker_.jpg",
+            "details" : ["Gladys Denker is the lady's maid to Violet Crawley, the Dowager Countess of Grantham."],
+            "quote": ""
+        },
+        "Septimus Spratt" : {
+            "name" : "Septimus Spratt",
+            "portrait" : "Assets/Characters/Spratt.png",
+            "details" : ["Septimus Spratt is the butler of Violet Crawley, the Dowager Countess of Grantham."],
+            "quote": ""
+        },
+        "James Kent" : {
+            "name" : "James Kent",
+            "portrait" : "Assets/Characters/Tn-500_edspeleers.jpg",
+            "details" : ["James “Jimmy” Kent started working at Downton Abbey in 1920 as a footman. He was later promoted to first footman by Robert Crawley."],
+            "quote": ""
+        },
+        "Edna Braithwaite" : {
+            "name" : "Edna Braithwaite",
+            "portrait" : "Assets/Characters/Edna-1-.png",
+            "details" : ["Edna Braithwaite was a general maid who arrived at Downton Abbey in September 1921 and left soon after, then briefly returned as a lady's maid."],
+            "quote": ""
+        },
+        "Alfred Nugent" : {
+            "name" : "Alfred Nugent",
+            "portrait" : "Assets/Characters/304883_338334502927047_1783096105_n.jpg",
+            "details" : ["Alfred Nugent was Sarah O'Brien's nephew who arrived at Downton Abbey in 1920 after Alfred's mother wrote to her sister asking her to help find Alfred a position there, which she did. He worked as a footman but lacked \"a natural air of confidence and grace\" that fellow footman Jimmy Kent had. Alfred replaced Thomas as footman, as Thomas had been moved up to become Valet to Lord Grantham in the absence of John Bates, who had at that time been wrongly incarcerated."],
+            "quote": ""
+        },
+        "Ivy Stuart" : {
+            "name" : "Ivy Stuart",
+            "portrait" : "Assets/Characters/Downton13-1-.jpg",
+            "details" : ["Ivy Stuart is a kitchen maid who worked at Downton Abbey from 1920-1923."],
+            "quote": ""
+        },
+        "Sarah O'Brien" : {
+            "name" : "Sarah O'Brien",
+            "portrait" : "Assets/Characters/Tn-500_siobhanfinneran.jpg",
+            "details" : ["Sarah O'Brien, also known as Miss O'Brien or simply O'Brien, was a lady's maid to Cora Crawley, Countess of Grantham. She is never particularly happy, but she is always bitter. Although she sometimes flatters the ladies of the house, she rarely means it. O'Brien formerly was an ally of Thomas Barrow, but when her nephew, Alfred, took a job as footman, then was being considered for a valet position in a short time their friendship terminated."],
+            "quote": ""
+        },
+        "Ethel Parks" : {
+            "name" : "Ethel Parks",
+            "portrait" : "Assets/Characters/S2-amy-nuttall-as-housemaid-edith_595.jpg",
+            "details" : ["Ethel Parks was a housemaid at Downton Abbey who started working there in 1916, but was dismissed in 1918 by Mrs. Hughes."],
+            "quote": ""
+        },
+        "William Mason" : {
+            "name" : "William Mason",
+            "portrait" : "Assets/Characters/Char_lg_william.jpg",
+            "details" : ["William Mason (d. 26 July, 1918) was the second footman at Downton Abbey until his conscription into the British army in World War I. He was the son of Mr Mason and the husband of Daisy Mason."],
+            "quote": ""
+        },
+        "Jane Moorsum" : {
+            "name" : "Jane Moorsum",
+            "portrait" : "Assets/Characters/Clare_Calbraith_as_Jane_Moorsum.jpg",
+            "details" : ["Jane Moorsum was a housemaid at Downton Abbey from 1918 until April 1919.", "Jane was employed to work at Downton in 1917 because she was widowed after her husband, Harry Moorsum, died in the Battle of the Somme; she came to Downton Abbey looking for work in order to support her 12-year-old son, Freddie Moorsum. She took the spot of Ethel Parks who was forced to resign and was in service until 1919. She was easily hired and her mother took care of Freddie if she should need it while she is working. She developed feelings for Robert, feelings that he returned, and the couple shared a few kisses. Robert helped Freddie, a keen mathematics student, to get a scholarship to Ripon Grammar. Soon after, realizing nothing would come of the affair, Jane handed in her notice and left.", "Jane's short lived affair with Robert was never found out by his wife, Cora. Even after Jane had left, Robert assured her that he will pay all the costs of her son Freddie's education."],
+            "quote": ""
+        },
+        "Gwen Harding" : {
+            "name" : "Gwen Harding",
+            "portrait" : "Assets/Characters/Gwen_Harding.PNG.png",
+            "details" : ["Gwen Harding (née Dawson) was a former housemaid at Downton Abbey and a main character in the first series."],
+            "quote": ""
+        }
     }
 }
