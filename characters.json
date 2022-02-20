@@ -1,0 +1,117 @@
+{
+    "nobility" : {
+        "Robert Crawley" : {
+            "name" : "Robert Crawley",
+            "portrait" : "Assets/Characters/Earlofgrantham.jpg",
+            "details" : ["Robert Crawley, 7th Earl of Grantham (born 1866) is the patriarch of the Crawley family and the co-owner of Downton Abbey (along with his eldest daughter). He is the son of the 6th Earl of Grantham and Violet Crawley, Dowager Countess of Grantham and the brother of Lady Rosamund Painswick. He fought in the South African Wars with John Bates.","He married American heiress Cora Levinson in 1890 in order to save the estate with her money, but eventually fell very much in love with her. They have three daughters together: Mary, Edith and Sybil Crawley; they also had a son lost in a miscarriage. Due to having no living sons, his heir was successively his cousins James Crawley, Patrick Crawley, and Matthew Crawley. The last became his son-in-law via Mary. All three of these heirs eventually died, making his only grandson and Mary and Matthew's only child, George Crawley, his current heir presumptive."],
+            "quote" : "\"If we don't respect the past, we'll find it harder to build a future.\" - Robert Crawley"
+        },
+        "Cora Crawley" : {
+            "name": "Cora Crawley",
+            "portrait" : "Assets/Characters/Countessofgrantham.jpg",
+            "details" : ["Cora Crawley, Countess of Grantham (née Levinson; born 1868) is the American heiress daughter of Martha and Isidore Levinson and sister of Harold Levinson. She married Robert Crawley, Viscount Downton who became Earl of Grantham upon his father's death, and brought her large dowry to Downton.", "Lady Grantham has three daughters, Mary, Edith and Sybil, and her main focus has been their happiness and success. Eighteen years after the birth of her last child, Sybil, Lady Grantham fell pregnant once again with a son, but miscarried. In 1920, after giving birth to Sybil 'Sybbie' Branson, Sybil died of complications, and Cora blamed her husband, who ignored Dr. Richard Clarkson's warnings in favor of the opinions of stuffy London doctor Sir Philip Tapsell. A year later Cora became a grandmother for the second time when Mary gave birth to a son, George. Within the hour of his birth, George became the heir to his grandfather's title and Downton Abbey as his father, Matthew Crawley, was killed in a car crash. Cora is also grandmother to Edith's illegitimate daughter, Marigold, and Mary's daughter, Caroline Talbot."],
+            "quote" : "\"You are being tested. And do you know what they say, my darling? Being tested only makes you stronger.\" —Cora to Edith when she was left at the altar by Anthony Strallan"
+        },
+        "Mary Crawley" : {
+            "name": "Mary Crawley",
+            "portrait" : "Assets/Characters/MaryTalbot.jpg",
+            "details" : [],
+            "quote" : ""
+        },
+        "Edith Crawley" : {
+            "name": "Edith Crawley",
+            "portrait" : "Assets/Characters/Marchionessofhexham.jpg",
+            "details" : [],
+            "quote" : ""
+        },
+        "Sybil Crawley" : {
+            "name": "Sybil Crawley",
+            "portrait" : "Assets/Characters/SybilCora.jpg",
+            "details" : [],
+            "quote" : ""
+        },
+        "Violet Crawley" : {
+            "name": "Violet Crawley",
+            "portrait" : "Assets/Characters/Thedowagercountess.jpg",
+            "details" : [],
+            "quote" : ""
+        },
+        "Rosamund Painscwick" : {
+            "name": "Rosamund Painscwick",
+            "portrait" : "Assets/Characters/LadyRosamundPainswick.png",
+            "details" : [],
+            "quote" : ""
+        },
+        "Rose Aldridge" : {
+            "name": "Rose Aldridge",
+            "portrait" : "Assets/Characters/RoseAldridge_.jpg",
+            "details" : [],
+            "quote" : ""
+        },
+        "Bertie Pelham" : {
+            "name": "Bertie Pelham",
+            "portrait" : "Assets/Characters/Marquessofhexham.jpg",
+            "details" : [],
+            "quote" : ""
+        },
+        "Henry Talbot" : {
+            "name": "Henry Talbot",
+            "portrait" : "Assets/Characters/Henrytalbot.jpg",
+            "details" : [],
+            "quote" : ""
+        },
+        "Isobel Crawley" : {
+            "name": "Isobel Crawley",
+            "portrait" : "Assets/Characters/Baronessmerton.jpg",
+            "details" : [],
+            "quote" : ""
+        }
+    },
+    "middle" : {
+        "Matthew Crawley" : {
+            "name": "Matthew Crawley",
+            "portrait" : "Assets/Characters/",
+            "details" : [],
+            "quote" : ""
+        },
+        "Matthew Crawley" : {
+            "name": "Matthew Crawley",
+            "portrait" : "Assets/Characters/",
+            "details" : [],
+            "quote" : ""
+        },
+        "Matthew Crawley" : {
+            "name": "Matthew Crawley",
+            "portrait" : "Assets/Characters/",
+            "details" : [],
+            "quote" : ""
+        },
+        "Matthew Crawley" : {
+            "name": "Matthew Crawley",
+            "portrait" : "Assets/Characters/",
+            "details" : [],
+            "quote" : ""
+        },
+        "Matthew Crawley" : {
+            "name": "Matthew Crawley",
+            "portrait" : "Assets/Characters/",
+            "details" : [],
+            "quote" : ""
+        },
+        "Matthew Crawley" : {
+            "name": "Matthew Crawley",
+            "portrait" : "Assets/Characters/",
+            "details" : [],
+            "quote" : ""
+        },
+        "Matthew Crawley" : {
+            "name": "Matthew Crawley",
+            "portrait" : "Assets/Characters/",
+            "details" : [],
+            "quote" : ""
+        }
+    },
+    "servants" : {
+
+    }
+}

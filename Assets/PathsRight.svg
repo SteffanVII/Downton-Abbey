@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="91" height="91" fill="none" viewBox="0 0 91 91">
+  <g class="Paths Right">
+    <path stroke="#FAE19F"  stroke-width="2" stroke-dasharray="4 2" d="M70 71V21H20" class="Bottom"/>
+    <path stroke="#FAE19F"  stroke-width="2" d="M90 91V11H10" class="Middle"/>
+    <path stroke="#FAE19F"  stroke-width="2" stroke-dasharray="4 2" d="M80 81V1H0" class="Top"/>
+  </g>
+</svg>

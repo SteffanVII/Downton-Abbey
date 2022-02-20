@@ -1,0 +1,119 @@
+header {
+    width: 100%;
+    height: 110px;
+    padding: 20px 20px 0 20px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    nav {
+        width: fit-content;
+        height: fit-content;
+        display: none;
+
+        &.show {
+            display: initial;
+        }
+
+        ul {
+            position: relative;
+
+            display: flex;
+            align-items: center;
+            gap: 60px;
+            list-style: none;
+
+            li {
+                opacity: 0;
+
+                @for $i from 1 through 3 {
+                    @if $i == 2 {
+                        &:nth-child(#{$i}) {
+                            animation: fadein 1s forwards;
+                        }
+                    } @else {
+                        &:nth-child(#{$i}) {
+                            animation: fadein 1s 0.2s forwards;
+                        }
+                    }
+                }
+
+                &:nth-child(1) {
+                    position: absolute;
+                    right: calc(100% + 50px);
+                }
+                &:nth-child(3) {
+                    position: absolute;
+                    left: calc(100% + 50px);
+                }
+
+                @keyframes fadein {
+                    from {
+                        opacity: 0;
+                        transform: translateY(80px);
+                    } to {
+                        opacity: 1;
+                        transform:  translateY(0px);
+                    }
+                }
+
+                a {
+                    position: relative;
+
+                    text-decoration: none;
+                    font-size: 15px;
+                    letter-spacing: 5px;
+                    color: $gold1;
+
+                    &::before {
+                        content: '';
+                        width: 4px;
+                        height: 4px;
+
+                        position: absolute;
+                        bottom: -25px;
+                        left: 50%;
+                        transform: rotate(45deg);
+
+                        background-color: $gold1;
+                        opacity: 0;
+
+                        transition: opacity 0.8s,
+                                    bottom 0.8s;
+                    }
+
+                    hr {
+                        width: 0%;
+                        
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        bottom: -1px;
+
+                        border: none;
+                        border-top: 1px dashed;
+
+                        transition: width 0.8s;
+                    }
+
+                    &:hover {
+                        hr {
+                            width: 100%;
+                        }
+
+                        &::before {
+                            bottom: -15px;
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

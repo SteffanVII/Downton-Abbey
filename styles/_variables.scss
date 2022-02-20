@@ -1,0 +1,44 @@
+$gold1: #FAE19F;
+$gold2: #F1DEAE;
+$goldLG1: linear-gradient(to left,#E3C575 10%, #F1DEAE  45%, #E3C575 65%, #9F8762 80%);
+$dropdownBG: linear-gradient(-145deg,#E3C575 10%, #F1DEAE  45%, #E3C575 65%, #9F8762 90%);
+
+:root {
+    // font-family: Adobe Caslon Pro;
+    background-color: black;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+
+    font-family: Adobe Caslon Pro;
+    font-weight: 100;
+}
+
+body {
+    width: calc(100vw - 1px);
+    height: fit-content;
+}
+
+::-webkit-scrollbar {
+    width: 1px;
+    position: absolute;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    height: 10px;
+    background-color: $gold1;
+}

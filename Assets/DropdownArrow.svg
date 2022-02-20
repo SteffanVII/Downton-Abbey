@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="27" height="15" fill="none" viewBox="0 0 27 15" id="DROPDOWNARROW">
+  <path stroke="url(#paint0_linear_60_146)" stroke-dasharray="2 2" d="M1 1l12.5 12.5L26 1" class="first"/>
+  <defs>
+    <linearGradient id="paint0_linear_60_146" x1="26" x2="1" y1="6.272" y2="6.242" class="paint0_linear_60_146" gradientUnits="userSpaceOnUse">
+      <stop offset=".078" stop-color="#E3C575"/>
+      <stop offset=".359" stop-color="#F1DEAE"/>
+      <stop offset=".604" stop-color="#E3C575"/>
+      <stop offset=".837" stop-color="#9F8762"/>
+    </linearGradient>
+  </defs>
+</svg>

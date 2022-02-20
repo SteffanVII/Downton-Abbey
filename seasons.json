@@ -1,0 +1,260 @@
+{
+    "1" : {
+        "poster" : "Assets/Seasons/poster-season-1.jpg",
+        "details" : "Lord Robert Crawley and his family live a life of leisure, while a fleet of servants, including butler Carson, attend to their every need. But two events conspire to shake things up: the sinking of the Titanic, which claims Crawley's heirs, and the return of his valet, Bates. Since Crawley and Lady Cora have three daughters, his distant solicitor cousin, Matthew, becomes heir to the estate. With that, the scheming begins, since Thomas the footman views Bates as an interloper and Crawley's mother, Violet, feels the same way about Matthew's mother, Isobel.",
+        "episodes" : [
+            {
+                "thumbnail" : "Assets/Seasons/Episodes/thumbnail-season-1-episode-1.jpg",
+                "episodeDetails" : "The lives of the aristocratic Crawleys and their Downton Abbey servants change forever when the Titanic's sinking leaves the estate without an heir."
+            }
+            ,
+            {
+                "thumbnail" : "Assets/Seasons/Episodes/thumbnail-season-1-episode-2.jpg",
+                "episodeDetails" : "The arrival of presumptive heir Matthew Crawley causes a stir at Downton as his decidedly middle-class mother Isobel crosses swords with Violet."
+            }
+            ,
+            {
+                "thumbnail" : "Assets/Seasons/Episodes/thumbnail-season-1-episode-3.jpg",
+                "episodeDetails" : "Cora's try at matchmaking is thwarted when Mary falls not for the wealthy Napier, but for his friend, Turkish attaché Pamuk, with dire consequences."
+            }
+            ,
+            {
+                "thumbnail" : "Assets/Seasons/Episodes/thumbnail-season-1-episode-4.jpg",
+                "episodeDetails" : "At the annual fair, Mrs. Hughes meets a former suitor who makes her question her position at Downton. Violet and Isobel lock horns over Molesley."
+            }
+            ,
+            {
+                "thumbnail" : "Assets/Seasons/Episodes/thumbnail-season-1-episode-5.jpg",
+                "episodeDetails" : "As the village prepares for the annual flower show, Isobel and Violet clash. Mary meets a potential suitor, but she only has eyes for Matthew."
+            }
+            ,
+            {
+                "thumbnail" : "Assets/Seasons/Episodes/thumbnail-season-1-episode-6.jpg",
+                "episodeDetails" : "Sybil lands in danger when a fight breaks out at the political meeting she's attending in secret. Her sisters notice Matthew's brave rescue."
+            }
+            ,
+            {
+                "thumbnail" : "Assets/Seasons/Episodes/thumbnail-season-1-episode-7.jpg",
+                "episodeDetails" : "Cora makes a discovery that throws the inheritance issue into chaos. Pressured by her aunt, Mary keeps Matthew waiting for an answer to his proposal."
+            }
+        ]
+    },
+    "2" : {
+        "poster" : "Assets/Seasons/poster-season-2.jpg",
+        "details" : "The Great War rages across Europe, and not even the serene Yorkshire countryside is free from its effects. The men and women of Downton are doing their part both on the front lines and the home front, but the intensity of war only serves to inflame the more familiar passions: love, loss, blackmail, and betrayal.",
+        "episodes" : [
+            {
+                "thumbnail" : "Assets/Seasons/Episodes/thumbnail-season-2-episode-1.jpg",
+                "episodeDetails" : "Two years into World War I, life at Downton Abbey has changed dramatically as young men go to war — or avoid it — and romantic dreams are dashed."
+            }
+            ,
+            {
+                "thumbnail" : "Assets/Seasons/Episodes/thumbnail-season-2-episode-2.jpg",
+                "episodeDetails" : "As William prepares to head off to war, Thomas returns to Downton. Meanwhile, Lavinia reunites with an unwelcome individual from her past."
+            }
+            ,
+            {
+                "thumbnail" : "Assets/Seasons/Episodes/thumbnail-season-2-episode-3.jpg",
+                "episodeDetails" : "The dowager countess decides to uncover Lavinia's secret, but will Mary help? And there's panic downstairs when Branson offers to lend a hand."
+            }
+            ,
+            {
+                "thumbnail" : "Assets/Seasons/Episodes/thumbnail-season-2-episode-4.jpg",
+                "episodeDetails" : "Violet and Mary wonder whether Sybil has a suitor. Lord Grantham tries to track down Bates, and disturbing news arrives from the front line."
+            }
+            ,
+            {
+                "thumbnail" : "Assets/Seasons/Episodes/thumbnail-season-2-episode-5.jpg",
+                "episodeDetails" : "Ethel struggles to cope and, with Mrs. Hughes' help, tries to make contact with Major Bryant."
+            }
+            ,
+            {
+                "thumbnail" : "Assets/Seasons/Episodes/thumbnail-season-2-episode-6.jpg",
+                "episodeDetails" : "The war finally ends, but Mary is under pressure to save her family from scandal, and a Canadian visitor claims to have links with the Granthams."
+            }
+            ,
+            {
+                "thumbnail" : "Assets/Seasons/Episodes/thumbnail-season-2-episode-7.jpg",
+                "episodeDetails" : "Matthew has some surprising news, and Ethel introduces her son to his grandparents. But will they offer her any help?"
+            }
+            ,
+            {
+                "thumbnail" : "Assets/Seasons/Episodes/thumbnail-season-2-episode-8.jpg",
+                "episodeDetails" : "Wedding preparations carry on, and romance blossoms, while joy, heartache and tragedy move the denizens of Downton Abbey."
+            }
+            ,
+            {
+                "thumbnail" : "Assets/Seasons/Episodes/thumbnail-season-2-episode-9.jpg",
+                "episodeDetails" : "'Tis the season, but tension lingers in the air between Sir Richard Carlisle, Lady Mary and Matthew."
+            }
+        ]
+    },
+    "3" : {
+        "poster" : "Assets/Seasons/poster-season-3.jpg",
+        "details" : "The Great War is over and a long-awaited engagement is on, but all is not tranquil at Downton Abbey as wrenching social changes, romantic intrigues, and personal crises grip the majestic English country estate. As other great houses are crippled psychologically and financially in the wake of World War I, Robert, Earl of Grantham, sticks to his duty to maintain Downton more firmly than ever. But in this changing landscape nothing is assured, and could it be that even the war-weary Crawleys must fight a new battle to safeguard their beloved Downton? ",
+        "episodes" : [
+            {
+                "thumbnail" : "Assets/Seasons/Episodes/thumbnail-season-3-episode-1.jpg",
+                "episodeDetails" : "Cora's mother travels to Downton Abbey for Matthew and Mary's wedding. But will the couple even make it to the altar?"
+            },
+            {
+                "thumbnail" : "Assets/Seasons/Episodes/thumbnail-season-3-episode-2.jpg",
+                "episodeDetails" : "Hoping to be financially rescued by her American grandmother, Mary conspires with Violet to make sure Downton puts on a bigger show than ever before."
+            },
+            {
+                "thumbnail" : "Assets/Seasons/Episodes/thumbnail-season-3-episode-3.jpg",
+                "episodeDetails" : "Edith's big day finally arrives, but can her family be convinced that Strallan's age does not matter? Mary takes matters into her own hands."
+            },
+            {
+                "thumbnail" : "Assets/Seasons/Episodes/thumbnail-season-3-episode-4.jpg",
+                "episodeDetails" : "Branson finds himself in hot water over his political views, and Sybil's loyalty is tested. A torn Ethel must make a decision about her son's future."
+            },
+            {
+                "thumbnail" : "Assets/Seasons/Episodes/thumbnail-season-3-episode-5.jpg",
+                "episodeDetails" : "Edith's exciting opportunity divides the family. As Sybil goes into labor, Dr. Clarkson clashes with a famous obstetrician over her care."
+            },
+            {
+                "thumbnail" : "Assets/Seasons/Episodes/thumbnail-season-3-episode-6.jpg",
+                "episodeDetails" : "Tempers fray when Isobel's kind gesture backfires. Branson's decisions are scrutinized. Bates' chance at freedom begins to slip away."
+            },
+            {
+                "thumbnail" : "Assets/Seasons/Episodes/thumbnail-season-3-episode-7.jpg",
+                "episodeDetails" : "Anna's patience is rewarded, Edith has an admirer, Matthew refuses to back down, and Branson's plans for the christening cause consternation."
+            },
+            {
+                "thumbnail" : "Assets/Seasons/Episodes/thumbnail-season-3-episode-8.jpg",
+                "episodeDetails" : "A cricket match brings out Robert's competitive side. Violet's great-niece visits Downton, and a trip to London reveals more than meets the eye."
+            },
+            {
+                "thumbnail" : "Assets/Seasons/Episodes/thumbnail-season-3-episode-9.jpg",
+                "episodeDetails" : "The Crawleys — with a very pregnant Mary — head to Scotland to visit Rose's family, but everyone can sense the tension between their hosts."
+            }
+        ]
+    },
+    "4" : {
+        "poster" : "Assets/Seasons/poster-season-4.jpg",
+        "details" : "Set in 1922, the fourth series sees Lady Mary mourning her loss as the Crawley family and the servants who work for them remain inseparably interlinked.",
+        "episodes" : [
+            {
+                "thumbnail" : "Assets/Seasons/Episodes/thumbnail-season-4-episode-1.jpg",
+                "episodeDetails" : "As mourning continues, Carson grapples with an unwelcome reminder of his past. Elsewhere, Edith reunites with Michael Gregson."
+            },
+            {
+                "thumbnail" : "Assets/Seasons/Episodes/thumbnail-season-4-episode-2.jpg",
+                "episodeDetails" : "Mary takes an interest in estate management but meets resistance from her father. Rose gets more than she bargains for at a tea dance in York."
+            },
+            {
+                "thumbnail" : "Assets/Seasons/Episodes/thumbnail-season-4-episode-3.jpg",
+                "episodeDetails" : "An eclectic mix of guests proves for a memorable house party at Downton Abbey, but the celebration takes a dark turn as the evening comes to a close."
+            },
+            {
+                "thumbnail" : "Assets/Seasons/Episodes/thumbnail-season-4-episode-4.jpg",
+                "episodeDetails" : "Bates puzzles over Anna's abrupt change in behavior. Edith and Michael up the stakes of their relationship, and Alfred reveals a secret ambition."
+            },
+            {
+                "thumbnail" : "Assets/Seasons/Episodes/thumbnail-season-4-episode-5.jpg",
+                "episodeDetails" : "Molesley offends Carson. Thomas tries to recruit a new ally. Feeling out of place, Branson considers a move. Bates issues an ultimatum to Mrs. Hughes."
+            },
+            {
+                "thumbnail" : "Assets/Seasons/Episodes/thumbnail-season-4-episode-6.jpg",
+                "episodeDetails" : "With Michael missing in Germany, Edith receives some unsettling news; Anna and Bates step out; Rose shakes up the family at Robert's birthday party."
+            },
+            {
+                "thumbnail" : "Assets/Seasons/Episodes/thumbnail-season-4-episode-7.jpg",
+                "episodeDetails" : "A farming crisis forces Mary and Blake to cooperate. Robert travels to America to retrieve Cora's brother while Violet falls gravely ill."
+            },
+            {
+                "thumbnail" : "Assets/Seasons/Episodes/thumbnail-season-4-episode-8.jpg",
+                "episodeDetails" : "Violet has suspicions about Edith. Mary confronts Rose about her romance, and Isobel attracts an admirer. Bates takes an unexpected day trip."
+            },
+            {
+                "thumbnail" : "Assets/Seasons/Episodes/thumbnail-season-4-episode-9.jpg",
+                "episodeDetails" : "The family readies for Rose's coming-out ball. Gillingham and Blake clash over Mary. Edith faces a difficult decision while the staff gets a day out."
+            }
+        ]
+    },
+    "5" : {
+        "poster" : "Assets/Seasons/poster-season-5.jpg",
+        "details" : "The Crawley family and the staff struggling with responsibilities and choices as they adjust to life in the Roaring Twenties. A new Labour government heralds changes that are being felt throughout the land, and Robert, Mary and Branson together must navigate these shifting sands to ensure the future of the estate for generations to come.",
+        "episodes" : [
+            {
+                "thumbnail" : "Assets/Seasons/Episodes/thumbnail-season-5-episode-1.jpg",
+                "episodeDetails" : "Carson gets into a fight with Robert and Mrs. Hughes over a war memorial. Branson’s friendship worries Robert, and Mary knows she's ready for love."
+            },
+            {
+                "thumbnail" : "Assets/Seasons/Episodes/thumbnail-season-5-episode-2.jpg",
+                "episodeDetails" : "Thomas reveals a secret, which strains the friendship between Baxter and Molesley. Rose tries to convince Robert to purchase a radio for the house."
+            },
+            {
+                "thumbnail" : "Assets/Seasons/Episodes/thumbnail-season-5-episode-3.jpg",
+                "episodeDetails" : "Mary’s secret meeting may be revealed, and Violet steps in. Branson receives an interesting proposition regarding the future of Downton Abbey."
+            },
+            {
+                "thumbnail" : "Assets/Seasons/Episodes/thumbnail-season-5-episode-4.jpg",
+                "episodeDetails" : "Sarah Bunting keeps causing a stir upstairs. Mary makes up her mind about Lord Gillingham. Rose’s father returns to Downton to share some news."
+            },
+            {
+                "thumbnail" : "Assets/Seasons/Episodes/thumbnail-season-5-episode-5.jpg",
+                "episodeDetails" : "Branson makes a decision about Sarah. Rose encounters a handsome stranger. Violet tries to stop Isobel from making the wrong choice."
+            },
+            {
+                "thumbnail" : "Assets/Seasons/Episodes/thumbnail-season-5-episode-6.jpg",
+                "episodeDetails" : "Blake’s schemes begin to be realized, and Mary must suddenly take on her rival. Edith gets shocking news and takes extreme measures."
+            },
+            {
+                "thumbnail" : "Assets/Seasons/Episodes/thumbnail-season-5-episode-7.jpg",
+                "episodeDetails" : "Rose introduces Atticus and his parents at Downton. Downstairs, Molesley tries to encourage Daisy to overcome her disappointment with her studies."
+            },
+            {
+                "thumbnail" : "Assets/Seasons/Episodes/thumbnail-season-5-episode-8.jpg",
+                "episodeDetails" : "Preparation for Rose’s big day continues, but family conflict threatens to spoil the event. Edith’s arrangement works well, but how long can it last?"
+            },
+            {
+                "thumbnail" : "Assets/Seasons/Episodes/thumbnail-season-5-episode-9.jpg",
+                "episodeDetails" : "Yuletide at Downton Abbey brings romance, a heartbreaking farewell, grief over lost love and a happy reunion for the family and servants."
+            }
+        ]
+    },
+    "6" : {
+        "poster" : "Assets/Seasons/poster-season-6.jpg",
+        "details" : "Our time with the Crawleys draws to a close and we see what will finally become of them all. Secrets and rifts threaten the unity of the family, while those below stairs continue to navigate social changes which put their futures in jeopardy. Will Mary choose the right path? Will her sister Edith finally get a break?! Will Carson and Mrs Hughes actually make it up the aisle? And will Anna and Bates overcome the many hurdles that have been set before them?",
+        "episodes" : [
+            {
+                "thumbnail" : "Assets/Seasons/Episodes/thumbnail-season-6-episode-1.jpg",
+                "episodeDetails" : "A stranger appears at Downton with a message for Mary. Meanwhile, Anna suffers a new setback, and Mrs. Hughes wrestles with a delicate dilemma."
+            },
+            {
+                "thumbnail" : "Assets/Seasons/Episodes/thumbnail-season-6-episode-2.jpg",
+                "episodeDetails" : "Wedding plans and fears of staff cutbacks stoke tensions among the servants, but Mary resolves to find help for Anna."
+            },
+            {
+                "thumbnail" : "Assets/Seasons/Episodes/thumbnail-season-6-episode-3.jpg",
+                "episodeDetails" : "Cora wades into the hospital debate, and Mrs. Hughes finds an ally in her quest for a simple wedding. Edith faces a crisis at the magazine."
+            },
+            {
+                "thumbnail" : "Assets/Seasons/Episodes/thumbnail-season-6-episode-4.jpg",
+                "episodeDetails" : "An unexpected visitor piques Mary's interest, and a former servant returns in a new role. Daisy grows desperate to secure the farm for Mr. Mason."
+            },
+            {
+                "thumbnail" : "Assets/Seasons/Episodes/thumbnail-season-6-episode-5.jpg",
+                "episodeDetails" : "Violet tries to lure a powerful figure into the hospital showdown, Barrow discovers Andy's secret, and a high-stakes dinner turns chaotic."
+            },
+            {
+                "thumbnail" : "Assets/Seasons/Episodes/thumbnail-season-6-episode-6.jpg",
+                "episodeDetails" : "As the family prepares to open the house to the public, Cora considers an intriguing offer. Daisy tries to sabotage a budding relationship."
+            },
+            {
+                "thumbnail" : "Assets/Seasons/Episodes/thumbnail-season-6-episode-7.jpg",
+                "episodeDetails" : "A trip to watch Henry Talbot race puts Mary on edge. Meanwhile, Isobel receives a puzzling invitation, and Daisy and Molesley prepare for their exams."
+            },
+            {
+                "thumbnail" : "Assets/Seasons/Episodes/thumbnail-season-6-episode-8.jpg",
+                "episodeDetails" : "New ventures prove challenging for Mrs. Patmore and Molesley. A change in Bertie's status takes the family by surprise, and a peevish Mary lashes out."
+            },
+            {
+                "thumbnail" : "Assets/Seasons/Episodes/thumbnail-season-6-episode-9.jpg",
+                "episodeDetails" : "Secret plots and life-changing moments abound as the family and staff of Downton find themselves on the brink of a new era."
+            }
+        ]
+    }
+}
