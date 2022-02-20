@@ -192,8 +192,10 @@ function changeCharacterSet( category, initial = false ) {
             els.charactersContainer.appendChild(div);
             div = els.charactersContainer.lastElementChild;
             div.outerHTML = `<div class="character ${init}" data-name="${value['name']}">
-                                <div class="portraitContainer">
-                                    <img src="${value['portrait']}" alt="${value['name']} portrait">
+                                <div class="portraitContainerWrapper">
+                                    <div class="portraitContainer">
+                                        <img src="${value['portrait']}" alt="${value['name']} portrait">
+                                    </div>
                                 </div>
                             </div>`
         }
@@ -339,7 +341,7 @@ els.close.addEventListener('click', function() {
 });
 
 document.querySelector('.heroLogo hr').addEventListener('animationend', function() {
-    createRipple( 50, 60 );
+    createRipple( 50, 30 );
 });
 
 // Event Listeners --------------------------------------------------------------------------------------------------

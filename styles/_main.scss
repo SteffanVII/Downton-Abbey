@@ -640,40 +640,47 @@ main {
                 width: 150px;
                 height: 225px;
 
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                opacity: 0;         
+                
+                .portraitContainerWrapper {
+                    width: 100%;
+                    height: 100%;
 
-                opacity: 0;
-                background: $goldLG1;
-                overflow: hidden;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    
+                    background: $goldLG1;
+                    
+                    overflow: hidden;
 
-                transition: box-shadow 1s;
+                    transition: transform 1s,
+                                box-shadow 1s;
 
-                .portraitContainer {
-                    width: calc(100% - 2px);
-                    height: calc(100% - 2px);
+                    .portraitContainer {
+                        width: calc(100% - 2px);
+                        height: calc(100% - 2px);
+    
+                        
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
 
-                    img {
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
+                    &:hover {
+                        transform: translateY(-20px);
                     }
                 }
+
                 
-
-                &:hover {
-                    box-shadow: 0px 0px 15px 5px $gold1;
-                }
-
                 &.show {
                     animation: characterFadeIn 1s forwards;
-                    // opacity: 1;
     
                     @for $var from 1 through 21 {
                         &:nth-child(#{$var}) {
                             animation-delay: 0.2s * $var;
-                            transition-delay: 0.2s * $var;
                         }
                     }
     
@@ -687,6 +694,7 @@ main {
                         }
                     }
                 }
+
             }
         }
 
