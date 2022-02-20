@@ -132,7 +132,7 @@
         },
         "John Bates" : {
             "name" : "John Bates",
-            "portrait" : "Assets/Characters/john_Bates.png",
+            "portrait" : "Assets/Characters/John_Bates.png",
             "details" : ["John Bates (born 1869) is Robert Crawley's valet. Initially he is poorly treated by most of the staff due to the fact that he uses a cane (he was wounded in the Boer War). Thomas Barrow and Sarah O'Brien make several attempts to get rid of him. Despite this, he is eventually able to earn the respect of much of the staff, such as Anna Smith and Mr Carson, who are impressed by his morals and work ethic, despite his disability."],
             "quote": ""
         },
