@@ -202,6 +202,17 @@ function changeCharacterSet( category, initial = false ) {
     
         Array.from(els.charactersContainer.querySelectorAll('.character')).forEach( char => {
             char.addEventListener('click', function() {
+                els.portrait.setAttribute('src', charactersList[this.getAttribute('data-name')].portrait);
+                els.portrait.setAttribute('alt', this.getAttribute('data-name') + 'portrait');
+                els.characterName.innerText = this.getAttribute('data-name');
+                Array.from(els.detailsContainer.querySelectorAll('p')).forEach( r => {
+                    r.remove();
+                } )
+                charactersList[this.getAttribute('data-name')]['details'].forEach( d => {
+                    let p = document.createElement('p');
+                    p.innerText = d;
+                    els.detailsContainer.appendChild(p);
+                } )
                 els.characterDetails.classList.add('show');
             })
         } );

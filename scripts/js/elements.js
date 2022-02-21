@@ -19,6 +19,10 @@ export             const charactersDropdownContents = charactersDropdown.querySe
 export                 const charactersDropdownbuttons = Array.from(charactersDropdownContents.querySelector('input'));
 export         const charactersContainer = characters.querySelector('.charactersContainer');
 export         const characterDetails = characters.querySelector('.characterDetails');
+export             const portrait = characterDetails.querySelector('.portrait img');
+export             const detailsContainer =  characterDetails.querySelector('.details');
+export                 const characterName = characterDetails.querySelector('.characterName');
+export                 const characterQuote = characterDetails.querySelector('.quote');
 export             const close = characterDetails.querySelector('button');
 export     const movies = document.querySelector('#movies');
 

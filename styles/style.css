@@ -1227,15 +1227,83 @@ main #characters .charactersContainer .character.show:nth-child(21) {
 main #characters .characterDetails {
   width: 100%;
   height: 100%;
+  padding: 0 200px;
   position: absolute;
   top: 0;
   left: 0;
-  display: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: min-content 1fr;
+      grid-template-columns: -webkit-min-content 1fr;
+      grid-template-columns: min-content 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  visibility: hidden;
   opacity: 0;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 101;
-  -webkit-transition: opacity 1s;
-  transition: opacity 1s;
+  -webkit-transition: opacity 1s, visibility 0s 1.1s;
+  transition: opacity 1s, visibility 0s 1.1s;
+}
+
+main #characters .characterDetails button {
+  pointer-events: all;
+}
+
+main #characters .characterDetails .portrait {
+  width: 334px;
+  height: 500px;
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, right top, left top, color-stop(10%, #E3C575), color-stop(45%, #F1DEAE), color-stop(65%, #E3C575), color-stop(80%, #9F8762));
+  background: linear-gradient(to left, #E3C575 10%, #F1DEAE 45%, #E3C575 65%, #9F8762 80%);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+main #characters .characterDetails .portrait .imgWrapper {
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+  overflow: hidden;
+}
+
+main #characters .characterDetails .portrait .imgWrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main #characters .characterDetails .details {
+  padding: 0 40px;
+}
+
+main #characters .characterDetails .details .characterName {
+  font-size: 34px;
+  background: linear-gradient(-145deg, #E3C575 10%, #F1DEAE 45%, #E3C575 65%, #9F8762 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+main #characters .characterDetails .details p {
+  padding: 10px 0;
+  color: white;
+  line-height: calc(1em + 4);
 }
 
 main #characters .characterDetails button {
@@ -1253,8 +1321,15 @@ main #characters .characterDetails button {
 }
 
 main #characters .characterDetails.show {
-  display: initial;
+  visibility: visible;
   opacity: 1;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+main #characters .characterDetails.show .portrait {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
 }
 
 main #characters.show {

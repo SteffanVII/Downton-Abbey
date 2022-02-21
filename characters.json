@@ -15,55 +15,56 @@
         "Mary Crawley" : {
             "name": "Mary Crawley",
             "portrait" : "Assets/Characters/MaryTalbot.jpg",
-            "details" : [],
-            "quote" : ""
+            "details" : ["Lady Mary Josephine Talbot (née Crawley; born 1891) is the eldest daughter of Robert the Earl of Grantham and Cora Crawley, the Countess of Grantham she is the sister of Lady Edith Pelham and the late Lady Sybil Branson, granddaughter of Violet Crawley, sister-in-law of Tom Branson and Herbert (Bertie) Pelham, and the aunt to her nieces, Sybbie Branson and Edith's daughter, Marigold (last name undetermined). She was married to Matthew Crawley and with him had a son, George Crawley, in 1921. Shortly after their son's birth, Matthew was killed in a car accident. Mary married Henry Talbot in 1925, and they have a daughter, Caroline Talbot, in 1926.", "Her father's sister Lady Rosamund Painswick and her deceased husband Marmaduke Painswick are Mary's aunt and uncle. She also has an uncle on her mother's side, Harold Levinson. She is second cousins with Lady Rose Aldridge, along with her sisters Lady Annabelle and James MacClare, Earl of Newtonmore. She has a second cousin-in-law in Rose's husband Atticus Aldridge, and their daughter Victoria Aldridge is her second cousin-once-removed. Rose's mother, the Marchioness of Flintshire, is her father's first cousin."],
+            "quote" : "\"You'll be my Mary always because mine is the true Mary.\" —Mary's first husband, Matthew Crawley, to her"
         },
         "Edith Crawley" : {
             "name": "Edith Crawley",
             "portrait" : "Assets/Characters/Marchionessofhexham.jpg",
-            "details" : [],
+            "details" : ["Edith Josephine Pelham, Marchioness of Hexham (née Crawley; born 1892) is the second daughter of Robert and Cora Crawley, sister of Lady Mary Talbot and the late Lady Sybil Branson, granddaughter of Violet Crawley, sister-in-law of Tom Branson, Henry Talbot, and the late Matthew Crawley, and the aunt to her nephew, George Crawley and her nieces, Sybbie Branson and Caroline Talbot.",
+            "Her father's sister, Lady Rosamund Painswick and her deceased husband Marmaduke Painswick are Edith's aunt and uncle. Also, her mother's brother, Harold Levinson, is her uncle. She is second cousins with Lady Rose Aldridge, Rose's sister Lady Annabelle and James MacClare, Earl of Newtonmore, and her second cousin-in-law is Rose's husband Atticus Aldridge, and her first-cousin-once-removed is Rose's mother, Susan MacClare, wife of Hugh MacClare, Marquess of Flintshire.", "In 1925, she married Herbert \"Bertie\" Pelham, 7th Marquess of Hexham. As the Marchioness of Hexham she outranks the members of her immediate family, including her mother and father. She has a daughter, Marigold, with her deceased lover, Michael Gregson, and in 1927 she revealed she's pregnant with Bertie's child."],
             "quote" : ""
         },
         "Sybil Crawley" : {
             "name": "Sybil Crawley",
             "portrait" : "Assets/Characters/SybilCora.jpg",
-            "details" : [],
-            "quote" : ""
+            "details" : ["Lady Sybil Cora Branson (née Crawley; born April, May or June 1895 — Between April and August 1920) was the youngest daughter of Robert and Cora Crawley, the Earl and Countess of Grantham, and the younger sister of Lady Mary and Lady Edith. Through her sister Mary, she was the sister-in-law of Matthew Crawley and the aunt of George Crawley. She would also be the maternal aunt to Marigold by her second eldest sister, Edith. Sybil was married to Tom Branson, with whom she had her one and only child, a daughter named after her, Sybil Branson."],
+            "quote" : "\"...I think she was unique in this family. Free of prejudice, free from narrow thinking.\" —Sarah Bunting about Sybil."
         },
         "Violet Crawley" : {
             "name": "Violet Crawley",
             "portrait" : "Assets/Characters/Thedowagercountess.jpg",
-            "details" : [],
+            "details" : ["Violet Crawley, Dowager Countess of Grantham (b. 1842), is the matriarch of the Crawley Family by her marriage to the late Earl of Grantham and a relative of the MacClare Family via her niece and goddaughter, Susan MacClare, Marchioness of Flintshire. She is the mother of Robert Crawley, the 7th Earl of Grantham, and of Lady Rosamund Painswick (née Crawley), and the grandmother of Robert and his wife Cora's three daughters: Mary, Edith, and Sybil. Through her granddaughters she has four great-grandchildren: Mary's children, son George, and daughter Caroline, Sybil's daughter Sybbie, and Edith's daughter Marigold."],
             "quote" : ""
         },
         "Rosamund Painscwick" : {
             "name": "Rosamund Painscwick",
             "portrait" : "Assets/Characters/LadyRosamundPainswick.png",
-            "details" : [],
+            "details" : ["Lady Rosamund Painswick (née Crawley), b. between 1860 and 1874) is the widow of a very wealthy banker, the late Marmaduke Painswick and the daughter of the previous Earl of Grantham and Violet Crawley; her closest ally within the family is her only sibling Robert. She is the sister-in-law of Cora, aunt of Lady Mary, Lady Edith and the late Lady Sybil, aunt-in-law of the late Matthew Crawley, Tom Branson, Henry Talbot, and Herbert Pelham and great-aunt of Sybbie Branson, George Crawley, Marigold, and Caroline Talbot.", "She lives in London by herself on 35 Belgrave Square. She likes to meddle in family affairs and has a very close bond to Robert and Downton Abbey."],
             "quote" : ""
         },
         "Rose Aldridge" : {
             "name": "Rose Aldridge",
             "portrait" : "Assets/Characters/RoseAldridge_.jpg",
-            "details" : [],
+            "details" : ["Lady Rose Aldridge (née MacClare) (b. 1902) is the youngest child of Hugh and Susan MacClare, the niece of Agatha and Louisa, the younger sister of James and Annabelle, the sister-in-law of Annabelle's husband, the great-niece of Violet Crawley, the Dowager Countess of Grantham, the wife of Atticus Aldridge, the daughter-in-law of Daniel and Rachel Aldridge and the mother of Victoria Rachel Cora Aldridge. In Autumn 1920, she visits Downton Abbey and stays with Violet in the Dower House. She returns a year later, in September 1921, when the Crawley family visits her home at Duneagle Castle, where it is agreed that Rose will go to stay with them when her parents go to India. She moves there sometime between September 1921 and February 1922. During her longer stay, she has relationships between Easingwold under-gardener Samuel Thawley, Sir John Bullock, and singer Jack Ross.", "In 1923, she is presented in London and at her debutante ball she dances with the Prince of Wales. In Summer 1924, she meets Atticus Aldridge and shortly after they marry and go on a honeymoon to Venice. At Downton, she and Atticus celebrate the latter's first Christmas. Shortly after, she moves to New York with Atticus. In September 1925, she gives birth to the couple's daughter, whom they name Victoria Rachel Cora Aldridge after Atticus's mother and Cora respectively, and the couple, sans child, return to Downton for the 1925-1926 new years celebrations."],
             "quote" : ""
         },
         "Bertie Pelham" : {
             "name": "Bertie Pelham",
             "portrait" : "Assets/Characters/Marquessofhexham.jpg",
-            "details" : [],
+            "details" : ["Herbert Pelham, 7th Marquess of Hexham, known as Bertie, is the owner of Brancaster Castle in Northumberland. He is second cousin once-removed to his predecessor, Peter, under whom he served as Brancaster's agent. On New Year's Eve 1925, he married Edith Crawley and became stepfather to Edith's daughter, Marigold. In 1927, Edith revealed she was pregnant with his child."],
             "quote" : ""
         },
         "Henry Talbot" : {
             "name": "Henry Talbot",
             "portrait" : "Assets/Characters/Henrytalbot.jpg",
-            "details" : [],
+            "details" : ["Henry Talbot is the nephew of Lady Shackleton, a longtime friend of Violet Crawley. During a visit to Brancaster Castle, Henry catches the eye of Violet's eldest granddaughter, Lady Mary Crawley, and eventually marries her in late summer 1925, and becomes stepfather to Mary's four-year-old son, George Crawley. By 1927, he and his wife Mary have a one-year-old daughter named Caroline."],
             "quote" : ""
         },
         "Isobel Crawley" : {
             "name": "Isobel Crawley",
             "portrait" : "Assets/Characters/Baronessmerton.jpg",
-            "details" : [],
+            "details" : ["Isobel Grey, Baroness Merton (née Turnbull, previously Crawley; born between 1853 and 1862) is a doctor's daughter and a member-in-law of the Crawley family and the Grey family; the former by her late husband Dr Reginald Crawley, her late son Matthew Crawley's marriage to the aristocratic Lady Mary Crawley and by her grandson George Crawley. In 1925, she married the Baron Merton, and became the stepmother of Larry Grey and Timothy Grey."],
             "quote" : ""
         }
     },
