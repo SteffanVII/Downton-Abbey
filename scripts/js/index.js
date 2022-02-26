@@ -385,7 +385,11 @@ els.close.addEventListener('click', function() {
 });
 
 document.querySelector('.hero-logo hr').addEventListener('animationend', function() {
-    createRipple( 50, 30 );
+    if ( document.documentElement.clientWidth < 920 ) {
+        createRipple(22, 12, els.canvas.clientHeight /2);
+    } else {
+        createRipple( 50, 30 );
+    }
 });
 
 els.navToggle.addEventListener('click', function() {
