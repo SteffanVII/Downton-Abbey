@@ -200,7 +200,7 @@ header {
     @include w980 {
         height: 90px;
 
-        img {
+        .lines {
             width: 71px;
             height: 71px;
         }
@@ -209,7 +209,7 @@ header {
     @include w640 {
         height: 70px;
 
-        img {
+        .lines {
             width: 51px;
             height: 51px;
         }

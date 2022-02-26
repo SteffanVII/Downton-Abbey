@@ -291,7 +291,7 @@ header nav ul li a:hover::before {
   header {
     height: 90px;
   }
-  header img {
+  header .lines {
     width: 71px;
     height: 71px;
   }
@@ -301,7 +301,7 @@ header nav ul li a:hover::before {
   header {
     height: 70px;
   }
-  header img {
+  header .lines {
     width: 51px;
     height: 51px;
   }
