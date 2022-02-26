@@ -20,7 +20,7 @@ let ioAboutWatchCharacter = new IntersectionObserver( (entries) => {
     entries.forEach( entry => {
         if ( entry.isIntersecting ) {
             if ( entry.intersectionRatio < 1 ) {
-                if ( entry.target === els.about ) {
+                if ( entry.target === els.aboutIO ) {
                     els.aboutContentWrapper.classList.remove('show');
                 } 
                 // else if ( entry.target === els.watch ) {
@@ -33,7 +33,7 @@ let ioAboutWatchCharacter = new IntersectionObserver( (entries) => {
                 //     }
                 // }
             } else if ( entry.intersectionRatio == 0 ) {
-                if ( entry.target === els.about ) {
+                if ( entry.target === els.aboutIO ) {
                     els.aboutContentWrapper.classList.remove('show');
                 } else if ( entry.target === els.watchIO ) {
                     els.watch.classList.remove('show');
@@ -42,7 +42,7 @@ let ioAboutWatchCharacter = new IntersectionObserver( (entries) => {
                 }
             }
             else {
-                if ( entry.target === els.about ) {
+                if ( entry.target === els.aboutIO ) {
                     els.aboutContentWrapper.classList.add('show');
                     Array.from(document.querySelectorAll('.episode')).forEach( ep => {
                         ep.classList.remove('show');
@@ -81,6 +81,7 @@ let ioAboutWatchCharacter = new IntersectionObserver( (entries) => {
 
 ioHero.observe(els.hero);
 ioAboutWatchCharacter.observe(els.about);
+ioAboutWatchCharacter.observe(els.aboutIO);
 ioAboutWatchCharacter.observe(els.watchIO);
 ioAboutWatchCharacter.observe(els.charactersIO);
 ioAboutWatchCharacter.observe(els.movies);

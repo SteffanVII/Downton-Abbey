@@ -4,6 +4,7 @@ export const main = document.querySelector("main");
 export     const canvas = main.querySelector('canvas');
 export     const hero = document.querySelector("#hero");
 export     const about = document.querySelector("#about");
+export         const aboutIO = about.querySelector(".about-io");
 export         const aboutContentWrapper = about.querySelector('.about-content-wrapper');
 export     const watch = document.querySelector('#watch');
 export     const watchIO =  watch.querySelector('.watch-io');
