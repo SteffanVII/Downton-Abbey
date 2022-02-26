@@ -12,28 +12,95 @@ header {
     justify-content: space-between;
     align-items: center;
 
+    .mobile-toggle {
+        width: 15px;
+        height: 15px;
+
+        position: absolute;
+        left: 50%;
+
+        visibility: hidden;
+        opacity: 0;
+        background: $gold1;
+        outline: none;
+        border: none;
+
+        transform: rotate(45deg) translateX(-50%);
+
+        transition: opacity 1s,
+                    visibility 0s 1s;
+
+        &.show {
+            @include w980 {
+                visibility: visible;
+                opacity: 1;
+    
+                transition: opacity 1s;
+            }
+        }
+    }
+
     nav {
         width: fit-content;
         height: fit-content;
+        padding: 20px 0px;
+
         display: none;
 
         &.show {
             display: initial;
+
+            @include w980 {
+                width: 100%;
+                height: fit-content;
+    
+                position: fixed;
+                top: 100%;
+                left: 0%;
+    
+                display: flex;
+                justify-content: center;
+                align-items: center;
+    
+                background-color: black;
+                visibility: hidden;
+                opacity: 0;
+    
+                transition: opacity 1s,
+                            transform 1s,
+                            visibility 0s 1s;
+                
+                &.toggle {
+                    visibility: visible;
+                    opacity: 1;
+                    
+                    transform: translateY(-100%);
+    
+                    transition: opacity 1s,
+                                transform 1s,
+                                visibility 0s 1s;
+                }
+            }
         }
 
         ul {
             position: relative;
 
-            display: flex;
+            display: inline-flex;
             align-items: center;
             gap: 60px;
             list-style: none;
+
+            @include w640 {
+                flex-flow: column;
+                gap: 20px;
+            }
 
             li {
                 opacity: 0;
 
                 @for $i from 1 through 3 {
-                    @if $i == 2 {
+                    @if $i == 1 {
                         &:nth-child(#{$i}) {
                             animation: fadein 1s forwards;
                         }
@@ -44,13 +111,22 @@ header {
                     }
                 }
 
-                &:nth-child(1) {
+                &:nth-child(2) {
                     position: absolute;
                     right: calc(100% + 50px);
+
+                    @include w640 {
+                        position: initial;
+                    }
+                    
                 }
                 &:nth-child(3) {
                     position: absolute;
                     left: calc(100% + 50px);
+
+                    @include w640 {
+                        position: initial;
+                    }
                 }
 
                 @keyframes fadein {
@@ -70,6 +146,10 @@ header {
                     font-size: 15px;
                     letter-spacing: 5px;
                     color: $gold1;
+
+                    @include w640 {
+                        font-size: 12px;
+                    }
 
                     &::before {
                         content: '';
@@ -114,6 +194,24 @@ header {
                     }
                 }
             }
+        }
+    }
+
+    @include w980 {
+        height: 90px;
+
+        img {
+            width: 71px;
+            height: 71px;
+        }
+    }
+    
+    @include w640 {
+        height: 70px;
+
+        img {
+            width: 51px;
+            height: 51px;
         }
     }
 }

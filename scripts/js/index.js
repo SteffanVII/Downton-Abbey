@@ -5,9 +5,11 @@ let ioHero = new IntersectionObserver( (entries) => {
     let entry = entries[0];
     if ( entry.isIntersecting ) {
         els.nav.classList.remove('show');
+        els.navToggle.classList.remove('show');
         els.hero.classList.remove('hide');
     } else {
         els.nav.classList.add('show');
+        els.navToggle.classList.add('show');
         els.hero.classList.add('hide');
     }
 }, {
@@ -21,16 +23,20 @@ let ioAboutWatchCharacter = new IntersectionObserver( (entries) => {
                 if ( entry.target === els.about ) {
                     els.aboutContentWrapper.classList.remove('show');
                 } else if ( entry.target === els.watch ) {
-                    els.watch.classList.remove('show');
+                    if ( entry.intersectionRatio * els.watch.clientHeight < document.documentElement.clientHeight ) {
+                        els.watch.classList.remove('show');
+                    }
                 } else if ( entry.target === els.characters ) {
-                    els.characters.classList.remove('show');
+                    if ( entry.intersectionRatio * els.characters.clientHeight < document.documentElement.clientHeight ) {
+                        els.characters.classList.remove('show');
+                    }
                 }
             } else if ( entry.intersectionRatio == 0 ) {
                 if ( entry.target === els.about ) {
                     els.aboutContentWrapper.classList.remove('show');
-                } else if ( entry.target === els.watch ) {
+                } else if ( entry.target === els.watchIO ) {
                     els.watch.classList.remove('show');
-                } else if ( entry.target === els.characters ) {
+                } else if ( entry.target === els.charactersIO ) {
                     els.characters.classList.remove('show');
                 }
             }
@@ -40,7 +46,7 @@ let ioAboutWatchCharacter = new IntersectionObserver( (entries) => {
                     Array.from(document.querySelectorAll('.episode')).forEach( ep => {
                         ep.classList.remove('show');
                     } )
-                } else if ( entry.target === els.watch ) {
+                } else if ( entry.target === els.watchIO ) {
                     els.watch.classList.add('show');
                     Array.from(document.querySelectorAll('.episode')).forEach( ep => {
                         ep.classList.add('show');
@@ -48,7 +54,7 @@ let ioAboutWatchCharacter = new IntersectionObserver( (entries) => {
                     Array.from(els.charactersContainer.querySelectorAll('.character')).forEach( char => {
                         char.classList.remove('show');
                     } );
-                } else if ( entry.target === els.characters ) {
+                } else if ( entry.target === els.charactersIO ) {
                     els.characters.classList.add('show');
                     Array.from(document.querySelectorAll('.episode')).forEach( ep => {
                         ep.classList.remove('show');
@@ -70,8 +76,8 @@ let ioAboutWatchCharacter = new IntersectionObserver( (entries) => {
 
 ioHero.observe(els.hero);
 ioAboutWatchCharacter.observe(els.about);
-ioAboutWatchCharacter.observe(els.watch);
-ioAboutWatchCharacter.observe(els.characters);
+ioAboutWatchCharacter.observe(els.watchIO);
+ioAboutWatchCharacter.observe(els.charactersIO);
 ioAboutWatchCharacter.observe(els.movies);
 
 // Intersection Observers --------------------------------------------------------------------------------------------------
@@ -135,7 +141,7 @@ function changeSeason(season, result, initial) {
 }
 
 function makeEpisode( episode, thumbnail, episodeDetail, initial) {
-    let container = document.querySelector('.seasonEpisodes');
+    let container = document.querySelector('.season-episodes');
 
     let init = initial ? "" : "show";
     console.log(init);
@@ -192,8 +198,8 @@ function changeCharacterSet( category, initial = false ) {
             els.charactersContainer.appendChild(div);
             div = els.charactersContainer.lastElementChild;
             div.outerHTML = `<div class="character ${init}" data-name="${value['name']}">
-                                <div class="portraitContainerWrapper">
-                                    <div class="portraitContainer">
+                                <div class="character__portrait-container-wrapper">
+                                    <div class="character__portrait-container-wrapper__container">
                                         <img src="${value['portrait']}" alt="${value['name']} portrait">
                                     </div>
                                 </div>
@@ -292,6 +298,25 @@ function createRipple( width = 50, speed = 50, radius = els.canvas.clientWidth /
 
 // Ripple Effect --------------------------------------------------------------------------------------------------
 
+// Scale Hero Logo --------------------------------------------------------------------------------------------------
+
+function scaleHeroLogo() {
+    const abbey = document.querySelector('#ABBEY');
+    const downton = document.querySelector('#DOWNTON');
+    const castle = document.querySelector('#HIGHCLERECASTLE');
+
+    abbey.style.height = abbey.querySelector('path').getBBox().height + 'px';
+    abbey.setAttribute('style', 'height: ' + abbey.querySelector('path').getBoundingClientRect().height + 'px' );
+    downton.style.height = downton.querySelector('path').getBBox().height + 'px';
+    downton.setAttribute('style', 'height: ' + downton.querySelector('path').getBoundingClientRect().height + 'px' );
+    castle.style.height = castle.querySelector('path').getBBox().height + 'px';
+    castle.setAttribute('style', 'height: ' + castle.querySelector('path').getBoundingClientRect().height + 'px' );
+}
+
+scaleHeroLogo();
+
+// Scale Hero Logo --------------------------------------------------------------------------------------------------
+
 // Animation Frame --------------------------------------------------------------------------------------------------
 
 let lt = 0;
@@ -324,6 +349,8 @@ window.addEventListener('resize', function() {
     ctx.arc(50, 50, 10, 0, 2 * Math.PI);
     ctx.strokeStyle = "white";
     ctx.stroke();
+
+    scaleHeroLogo();
 });
 
 els.seasonsDropdown.addEventListener('click', function() {
@@ -351,8 +378,12 @@ els.close.addEventListener('click', function() {
     els.characterDetails.classList.remove('show');
 });
 
-document.querySelector('.heroLogo hr').addEventListener('animationend', function() {
+document.querySelector('.hero-logo hr').addEventListener('animationend', function() {
     createRipple( 50, 30 );
+});
+
+els.navToggle.addEventListener('click', function() {
+    els.nav.classList.toggle('toggle');
 });
 
 // Event Listeners --------------------------------------------------------------------------------------------------

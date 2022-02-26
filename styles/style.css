@@ -69,6 +69,31 @@ header {
           align-items: center;
 }
 
+header .mobile-toggle {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 50%;
+  visibility: hidden;
+  opacity: 0;
+  background: #FAE19F;
+  outline: none;
+  border: none;
+  -webkit-transform: rotate(45deg) translateX(-50%);
+          transform: rotate(45deg) translateX(-50%);
+  -webkit-transition: opacity 1s, visibility 0s 1s;
+  transition: opacity 1s, visibility 0s 1s;
+}
+
+@media screen and (max-width: 980px) {
+  header .mobile-toggle.show {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
+  }
+}
+
 header nav {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -76,6 +101,7 @@ header nav {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  padding: 20px 0px;
   display: none;
 }
 
@@ -83,11 +109,49 @@ header nav.show {
   display: initial;
 }
 
+@media screen and (max-width: 980px) {
+  header nav.show {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    position: fixed;
+    top: 100%;
+    left: 0%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: black;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity 1s, visibility 0s 1s, -webkit-transform 1s;
+    transition: opacity 1s, visibility 0s 1s, -webkit-transform 1s;
+    transition: opacity 1s, transform 1s, visibility 0s 1s;
+    transition: opacity 1s, transform 1s, visibility 0s 1s, -webkit-transform 1s;
+  }
+  header nav.show.toggle {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    -webkit-transition: opacity 1s, visibility 0s 1s, -webkit-transform 1s;
+    transition: opacity 1s, visibility 0s 1s, -webkit-transform 1s;
+    transition: opacity 1s, transform 1s, visibility 0s 1s;
+    transition: opacity 1s, transform 1s, visibility 0s 1s, -webkit-transform 1s;
+  }
+}
+
 header nav ul {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -95,33 +159,55 @@ header nav ul {
   list-style: none;
 }
 
+@media screen and (max-width: 640px) {
+  header nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    gap: 20px;
+  }
+}
+
 header nav ul li {
   opacity: 0;
 }
 
 header nav ul li:nth-child(1) {
+  -webkit-animation: fadein 1s forwards;
+          animation: fadein 1s forwards;
+}
+
+header nav ul li:nth-child(2) {
+  -webkit-animation: fadein 1s 0.2s forwards;
+          animation: fadein 1s 0.2s forwards;
+}
+
+header nav ul li:nth-child(3) {
   -webkit-animation: fadein 1s 0.2s forwards;
           animation: fadein 1s 0.2s forwards;
 }
 
 header nav ul li:nth-child(2) {
-  -webkit-animation: fadein 1s forwards;
-          animation: fadein 1s forwards;
-}
-
-header nav ul li:nth-child(3) {
-  -webkit-animation: fadein 1s 0.2s forwards;
-          animation: fadein 1s 0.2s forwards;
-}
-
-header nav ul li:nth-child(1) {
   position: absolute;
   right: calc(100% + 50px);
+}
+
+@media screen and (max-width: 640px) {
+  header nav ul li:nth-child(2) {
+    position: initial;
+  }
 }
 
 header nav ul li:nth-child(3) {
   position: absolute;
   left: calc(100% + 50px);
+}
+
+@media screen and (max-width: 640px) {
+  header nav ul li:nth-child(3) {
+    position: initial;
+  }
 }
 
 @-webkit-keyframes fadein {
@@ -156,6 +242,12 @@ header nav ul li a {
   font-size: 15px;
   letter-spacing: 5px;
   color: #FAE19F;
+}
+
+@media screen and (max-width: 640px) {
+  header nav ul li a {
+    font-size: 12px;
+  }
 }
 
 header nav ul li a::before {
@@ -193,6 +285,26 @@ header nav ul li a:hover hr {
 header nav ul li a:hover::before {
   bottom: -15px;
   opacity: 1;
+}
+
+@media screen and (max-width: 980px) {
+  header {
+    height: 90px;
+  }
+  header img {
+    width: 71px;
+    height: 71px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  header {
+    height: 70px;
+  }
+  header img {
+    width: 51px;
+    height: 51px;
+  }
 }
 
 main {
@@ -245,7 +357,7 @@ main #hero .welcome {
           animation: welcomeFadeIn 1s forwards;
 }
 
-main #hero .heroLogo {
+main #hero .hero-logo {
   width: 80%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -268,25 +380,31 @@ main #hero .heroLogo {
   pointer-events: none;
 }
 
-main #hero .heroLogo #HIGHCLERECASTLE {
+@media screen and (max-width: 980px) {
+  main #hero .hero-logo {
+    gap: 20px;
+  }
+}
+
+main #hero .hero-logo #HIGHCLERECASTLE {
   opacity: 0;
   -webkit-animation: hcFadeIn 1s 1s forwards;
           animation: hcFadeIn 1s 1s forwards;
 }
 
-main #hero .heroLogo #DOWNTON {
+main #hero .hero-logo #DOWNTON {
   opacity: 0;
   -webkit-animation: downtonFadeIn 2s ease-out 2s forwards;
           animation: downtonFadeIn 2s ease-out 2s forwards;
 }
 
-main #hero .heroLogo #ABBEY {
+main #hero .hero-logo #ABBEY {
   opacity: 0;
   -webkit-animation: abbeyFadeIn 2s ease-out 2s forwards;
           animation: abbeyFadeIn 2s ease-out 2s forwards;
 }
 
-main #hero .heroLogo hr {
+main #hero .hero-logo hr {
   width: 0%;
   height: 1px;
   position: absolute;
@@ -445,7 +563,7 @@ main #about {
   position: relative;
 }
 
-main #about .aboutContentWrapper {
+main #about .about-content-wrapper {
   width: 100%;
   height: 100%;
   position: relative;
@@ -468,7 +586,13 @@ main #about .aboutContentWrapper {
   transition: opacity 1s;
 }
 
-main #about .aboutContentWrapper .aboutShow {
+@media screen and (max-width: 1024px) {
+  main #about .about-content-wrapper {
+    gap: 20px;
+  }
+}
+
+main #about .about-content-wrapper .about-content-wrapper__about-show {
   width: 600px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -483,18 +607,65 @@ main #about .aboutContentWrapper .aboutShow {
   gap: 30px;
 }
 
-main #about .aboutContentWrapper .aboutShow p {
+main #about .about-content-wrapper .about-content-wrapper__about-show p {
   text-align: center;
   font-family: Adobe Caslon Pro;
   font-size: 14px;
   color: white;
 }
 
-main #about .aboutContentWrapper.show {
+@media screen and (max-width: 640px) {
+  main #about .about-content-wrapper .about-content-wrapper__about-show p {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  main #about .about-content-wrapper .about-content-wrapper__about-show {
+    width: 65%;
+  }
+}
+
+main #about .about-content-wrapper .about-content-wrapper__about-show svg {
+  width: 100%;
+}
+
+main #about .about-content-wrapper.show {
   opacity: 1;
 }
 
-main #about .aboutContentWrapper a {
+main #about .about-content-wrapper .about-content-wrapper__awards-wrapper {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+main #about .about-content-wrapper .about-content-wrapper__awards-wrapper__award-container img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  main #about .about-content-wrapper .about-content-wrapper__awards-wrapper__award-container {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  main #about .about-content-wrapper .about-content-wrapper__awards-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+}
+
+main #about .about-content-wrapper a {
   position: absolute;
   bottom: 50px;
   display: -webkit-box;
@@ -515,43 +686,30 @@ main #about .aboutContentWrapper a {
   letter-spacing: 5px;
 }
 
-main #about .aboutContentWrapper a .first {
+@media screen and (max-width: 1024px) {
+  main #about .about-content-wrapper a {
+    bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  main #about .about-content-wrapper a {
+    font-size: 14px;
+  }
+}
+
+main #about .about-content-wrapper a .first {
   --total: 45;
   stroke-dashoffset: var(--total);
   -webkit-transition: stroke-dashoffset 1s;
   transition: stroke-dashoffset 1s;
 }
 
-main #about .aboutContentWrapper a:hover .first {
+main #about .about-content-wrapper a:hover .first {
   stroke-dashoffset: 0;
 }
 
-main #about .aboutContentWrapper .awardsWrapper {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-}
-
-main #about .aboutContentWrapper .awardsWrapper .awardContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-main #about .aboutContentWrapper .awardsWrapper .awardContainer span {
-  background-image: -webkit-gradient(linear, right top, left top, color-stop(10%, #E3C575), color-stop(45%, #F1DEAE), color-stop(65%, #E3C575), color-stop(80%, #9F8762));
-  background-image: linear-gradient(to left, #E3C575 10%, #F1DEAE 45%, #E3C575 65%, #9F8762 80%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 main #watch {
-  padding: 0px 150px;
   padding-top: 110px;
   position: relative;
   display: -ms-grid;
@@ -577,8 +735,25 @@ main #watch {
   transition: opacity 1s;
 }
 
-main #watch .seasonsHeader {
+@media screen and (max-width: 1280px) {
+  main #watch {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
+
+main #watch .watch-io {
   width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+}
+
+main #watch .seasons-header {
+  width: 100%;
+  padding: 0px 150px;
   -webkit-transform: translateX(-200px);
           transform: translateX(-200px);
   z-index: 10;
@@ -588,7 +763,26 @@ main #watch .seasonsHeader {
   transition: transform 1s, -webkit-transform 1s;
 }
 
-main #watch .seasonsHeader .seasonsDropdown {
+@media screen and (max-width: 1280px) {
+  main #watch .seasons-header {
+    padding: 0px 90px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  main #watch .seasons-header {
+    padding: 0px 60px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main #watch .seasons-header p {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
+main #watch .seasons-header .seasons-header__dropdown {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -602,21 +796,21 @@ main #watch .seasonsHeader .seasonsDropdown {
   cursor: pointer;
 }
 
-main #watch .seasonsHeader .seasonsDropdown span {
+main #watch .seasons-header .seasons-header__dropdown span {
   margin-right: 10px;
   font-family: Adobe Caslon Pro;
   font-size: 18px;
   color: #FAE19F;
 }
 
-main #watch .seasonsHeader .seasonsDropdown img {
+main #watch .seasons-header .seasons-header__dropdown img {
   -webkit-transition: -webkit-transform 1s;
   transition: -webkit-transform 1s;
   transition: transform 1s;
   transition: transform 1s, -webkit-transform 1s;
 }
 
-main #watch .seasonsHeader .seasonsDropdown .seasonsDropdownContent {
+main #watch .seasons-header .seasons-header__dropdown .seasons-header-dropdown__content {
   width: 150px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -638,7 +832,7 @@ main #watch .seasonsHeader .seasonsDropdown .seasonsDropdownContent {
   transition: max-height 1s;
 }
 
-main #watch .seasonsHeader .seasonsDropdown .seasonsDropdownContent label {
+main #watch .seasons-header .seasons-header__dropdown .seasons-header-dropdown__content label {
   width: 100%;
   padding: 5px 0px;
   padding-top: 9px;
@@ -649,24 +843,24 @@ main #watch .seasonsHeader .seasonsDropdown .seasonsDropdownContent label {
   cursor: pointer;
 }
 
-main #watch .seasonsHeader .seasonsDropdown .seasonsDropdownContent label:hover {
+main #watch .seasons-header .seasons-header__dropdown .seasons-header-dropdown__content label:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-main #watch .seasonsHeader .seasonsDropdown .seasonsDropdownContent input[type=radio] {
+main #watch .seasons-header .seasons-header__dropdown .seasons-header-dropdown__content input[type=radio] {
   display: none;
 }
 
-main #watch .seasonsHeader .seasonsDropdown.opened img {
+main #watch .seasons-header .seasons-header__dropdown.opened img {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
-main #watch .seasonsHeader .seasonsDropdown.opened .seasonsDropdownContent {
+main #watch .seasons-header .seasons-header__dropdown.opened .seasons-header-dropdown__content {
   max-height: 300px;
 }
 
-main #watch .seasonsHeader .seasonDetails {
+main #watch .seasons-header .season-header__details {
   width: 100%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -681,33 +875,54 @@ main #watch .seasonsHeader .seasonDetails {
           column-gap: 20px;
 }
 
-main #watch .seasonsHeader .seasonDetails .poster {
+@media screen and (max-width: 640px) {
+  main #watch .seasons-header .season-header__details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 0px;
+  }
+}
+
+main #watch .seasons-header .season-header__details .season-header__details__poster {
   width: 86px;
   height: 124px;
   display: inline-block;
   background-color: white;
 }
 
-main #watch .seasonsHeader .seasonDetails .poster img {
+@media screen and (max-width: 640px) {
+  main #watch .seasons-header .season-header__details .season-header__details__poster {
+    display: none;
+  }
+}
+
+main #watch .seasons-header .season-header__details .season-header__details__poster img {
   width: 100%;
   height: 100%;
 }
 
-main #watch .seasonsHeader .seasonDetails .texts {
+main #watch .seasons-header .season-header__details .season-header__details__texts {
   width: 90%;
   display: inline-block;
   color: white;
 }
 
-main #watch .seasonsHeader .seasonDetails .texts h3 {
+@media screen and (max-width: 640px) {
+  main #watch .seasons-header .season-header__details .season-header__details__texts {
+    width: 100%;
+  }
+}
+
+main #watch .seasons-header .season-header__details .season-header__details__texts h3 {
   color: #FAE19F;
 }
 
-main #watch .seasonsHeader .seasonDetails .texts p {
+main #watch .seasons-header .season-header__details .season-header__details__texts p {
   font-size: 14px;
 }
 
-main #watch .seasonEpisodes {
+main #watch .season-episodes {
   width: 100%;
   height: 100%;
   padding-bottom: 30px;
@@ -715,9 +930,6 @@ main #watch .seasonEpisodes {
   display: grid;
   -ms-grid-columns: (300px)[4];
       grid-template-columns: repeat(4, 300px);
-  -ms-grid-rows: (min-content)[2];
-      grid-template-rows: repeat(2, -webkit-min-content);
-      grid-template-rows: repeat(2, min-content);
   -webkit-column-gap: 40px;
           column-gap: 40px;
   row-gap: 20px;
@@ -728,11 +940,32 @@ main #watch .seasonEpisodes {
   scrollbar-width: none;
 }
 
-main #watch .seasonEpisodes::-webkit-scrollbar {
+@media screen and (max-width: 1366px) {
+  main #watch .season-episodes {
+    -ms-grid-columns: (300px)[3];
+        grid-template-columns: repeat(3, 300px);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  main #watch .season-episodes {
+    -ms-grid-columns: (300px)[2];
+        grid-template-columns: repeat(2, 300px);
+  }
+}
+
+@media screen and (max-width: 720px) {
+  main #watch .season-episodes {
+    -ms-grid-columns: (300px)[1];
+        grid-template-columns: repeat(1, 300px);
+  }
+}
+
+main #watch .season-episodes::-webkit-scrollbar {
   display: none;
 }
 
-main #watch .seasonEpisodes .episode {
+main #watch .season-episodes .episode {
   width: 300px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -753,18 +986,18 @@ main #watch .seasonEpisodes .episode {
   transition: opacity 1s;
 }
 
-main #watch .seasonEpisodes .episode span {
+main #watch .season-episodes .episode span {
   font-size: 16px;
 }
 
-main #watch .seasonEpisodes .episode figure {
+main #watch .season-episodes .episode figure {
   width: 100%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
 
-main #watch .seasonEpisodes .episode figure a {
+main #watch .season-episodes .episode figure a {
   width: 300px;
   height: 169px;
   position: relative;
@@ -783,7 +1016,7 @@ main #watch .seasonEpisodes .episode figure a {
   background: linear-gradient(to left, #E3C575 10%, #F1DEAE 45%, #E3C575 65%, #9F8762 80%);
 }
 
-main #watch .seasonEpisodes .episode figure a span {
+main #watch .season-episodes .episode figure a span {
   width: 300px;
   height: 169px;
   position: absolute;
@@ -802,84 +1035,84 @@ main #watch .seasonEpisodes .episode figure a span {
   transition: opacity 1s;
 }
 
-main #watch .seasonEpisodes .episode figure a img {
+main #watch .season-episodes .episode figure a img {
   width: calc(100% - 2px);
   height: calc(100% - 2px);
 }
 
-main #watch .seasonEpisodes .episode figure a:hover span {
+main #watch .season-episodes .episode figure a:hover span {
   opacity: 1;
 }
 
-main #watch .seasonEpisodes .episode figure figcaption {
+main #watch .season-episodes .episode figure figcaption {
   padding: 10px;
   font-size: 12px;
   line-height: 18px;
   color: white;
 }
 
-main #watch .seasonEpisodes .episode.show {
+main #watch .season-episodes .episode.show {
   -webkit-animation: episodeFadeIn 1s forwards;
           animation: episodeFadeIn 1s forwards;
 }
 
-main #watch .seasonEpisodes .episode.show:nth-child(1) {
+main #watch .season-episodes .episode.show:nth-child(1) {
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s;
   -webkit-transition-delay: 0.2s;
           transition-delay: 0.2s;
 }
 
-main #watch .seasonEpisodes .episode.show:nth-child(2) {
+main #watch .season-episodes .episode.show:nth-child(2) {
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
   -webkit-transition-delay: 0.4s;
           transition-delay: 0.4s;
 }
 
-main #watch .seasonEpisodes .episode.show:nth-child(3) {
+main #watch .season-episodes .episode.show:nth-child(3) {
   -webkit-animation-delay: 0.6s;
           animation-delay: 0.6s;
   -webkit-transition-delay: 0.6s;
           transition-delay: 0.6s;
 }
 
-main #watch .seasonEpisodes .episode.show:nth-child(4) {
+main #watch .season-episodes .episode.show:nth-child(4) {
   -webkit-animation-delay: 0.8s;
           animation-delay: 0.8s;
   -webkit-transition-delay: 0.8s;
           transition-delay: 0.8s;
 }
 
-main #watch .seasonEpisodes .episode.show:nth-child(5) {
+main #watch .season-episodes .episode.show:nth-child(5) {
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
   -webkit-transition-delay: 1s;
           transition-delay: 1s;
 }
 
-main #watch .seasonEpisodes .episode.show:nth-child(6) {
+main #watch .season-episodes .episode.show:nth-child(6) {
   -webkit-animation-delay: 1.2s;
           animation-delay: 1.2s;
   -webkit-transition-delay: 1.2s;
           transition-delay: 1.2s;
 }
 
-main #watch .seasonEpisodes .episode.show:nth-child(7) {
+main #watch .season-episodes .episode.show:nth-child(7) {
   -webkit-animation-delay: 1.4s;
           animation-delay: 1.4s;
   -webkit-transition-delay: 1.4s;
           transition-delay: 1.4s;
 }
 
-main #watch .seasonEpisodes .episode.show:nth-child(8) {
+main #watch .season-episodes .episode.show:nth-child(8) {
   -webkit-animation-delay: 1.6s;
           animation-delay: 1.6s;
   -webkit-transition-delay: 1.6s;
           transition-delay: 1.6s;
 }
 
-main #watch .seasonEpisodes .episode.show:nth-child(9) {
+main #watch .season-episodes .episode.show:nth-child(9) {
   -webkit-animation-delay: 1.8s;
           animation-delay: 1.8s;
   -webkit-transition-delay: 1.8s;
@@ -916,7 +1149,7 @@ main #watch.show {
   opacity: 1;
 }
 
-main #watch.show .seasonsHeader {
+main #watch.show .seasons-header {
   -webkit-transform: translateX(0px);
           transform: translateX(0px);
 }
@@ -944,7 +1177,23 @@ main #characters {
   transition: opacity 1s;
 }
 
-main #characters .charactersDropdown {
+main #characters .characters-io {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+}
+
+@media screen and (max-width: 1280px) {
+  main #characters {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
+
+main #characters .characters-dropdown {
   position: relative;
   z-index: 10;
   display: -webkit-box;
@@ -961,20 +1210,20 @@ main #characters .charactersDropdown {
   cursor: pointer;
 }
 
-main #characters .charactersDropdown span {
+main #characters .characters-dropdown span {
   color: #FAE19F;
   letter-spacing: 5px;
   text-transform: capitalize;
 }
 
-main #characters .charactersDropdown .first {
+main #characters .characters-dropdown .first {
   --total: 45;
   stroke-dashoffset: var(--total);
   -webkit-transition: stroke-dashoffset 1s;
   transition: stroke-dashoffset 1s;
 }
 
-main #characters .charactersDropdown .charactersDropdownContent {
+main #characters .characters-dropdown .characters-dropdown__content {
   width: 150px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -997,11 +1246,11 @@ main #characters .charactersDropdown .charactersDropdownContent {
   transition: max-height 1s;
 }
 
-main #characters .charactersDropdown .charactersDropdownContent input {
+main #characters .characters-dropdown .characters-dropdown__content input {
   display: none;
 }
 
-main #characters .charactersDropdown .charactersDropdownContent label {
+main #characters .characters-dropdown .characters-dropdown__content label {
   width: 100%;
   padding: 10px 0px;
   padding-top: 14px;
@@ -1011,28 +1260,28 @@ main #characters .charactersDropdown .charactersDropdownContent label {
   transition: background-color 1s;
 }
 
-main #characters .charactersDropdown .charactersDropdownContent label:hover {
+main #characters .characters-dropdown .characters-dropdown__content label:hover {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-main #characters .charactersDropdown.opened .charactersDropdownContent {
+main #characters .characters-dropdown.opened .characters-dropdown__content {
   max-height: 200px;
 }
 
-main #characters .charactersDropdown.opened .first {
+main #characters .characters-dropdown.opened .first {
   stroke-dashoffset: 0;
 }
 
-main #characters .charactersContainer {
-  padding: 50px;
+main #characters .characters-container {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 50px 0px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (min-content)[6];
       grid-template-columns: repeat(6, -webkit-min-content);
       grid-template-columns: repeat(6, min-content);
-  -ms-grid-rows: (min-content)[2];
-      grid-template-rows: repeat(2, -webkit-min-content);
-      grid-template-rows: repeat(2, min-content);
   gap: 50px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1044,13 +1293,51 @@ main #characters .charactersContainer {
   scrollbar-width: none;
 }
 
-main #characters .charactersContainer .character {
+@media screen and (max-width: 1280px) {
+  main #characters .characters-container {
+    -ms-grid-columns: (min-content)[5];
+        grid-template-columns: repeat(5, -webkit-min-content);
+        grid-template-columns: repeat(5, min-content);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  main #characters .characters-container {
+    -ms-grid-columns: (min-content)[4];
+        grid-template-columns: repeat(4, -webkit-min-content);
+        grid-template-columns: repeat(4, min-content);
+  }
+}
+
+@media screen and (max-width: 870px) {
+  main #characters .characters-container {
+    -ms-grid-columns: (min-content)[3];
+        grid-template-columns: repeat(3, -webkit-min-content);
+        grid-template-columns: repeat(3, min-content);
+  }
+}
+
+@media screen and (max-width: 720px) {
+  main #characters .characters-container {
+    -ms-grid-columns: (min-content)[2];
+        grid-template-columns: repeat(2, -webkit-min-content);
+        grid-template-columns: repeat(2, min-content);
+  }
+}
+
+@media screen and (max-width: 640px) {
+  main #characters .characters-container {
+    gap: 20px;
+  }
+}
+
+main #characters .characters-container .character {
   width: 150px;
   height: 225px;
   opacity: 0;
 }
 
-main #characters .charactersContainer .character .portraitContainerWrapper {
+main #characters .characters-container .character .character__portrait-container-wrapper {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -1071,129 +1358,129 @@ main #characters .charactersContainer .character .portraitContainerWrapper {
   transition: transform 1s, box-shadow 1s, -webkit-transform 1s, -webkit-box-shadow 1s;
 }
 
-main #characters .charactersContainer .character .portraitContainerWrapper .portraitContainer {
+main #characters .characters-container .character .character__portrait-container-wrapper .character__portrait-container-wrapper__container {
   width: calc(100% - 2px);
   height: calc(100% - 2px);
 }
 
-main #characters .charactersContainer .character .portraitContainerWrapper .portraitContainer img {
+main #characters .characters-container .character .character__portrait-container-wrapper .character__portrait-container-wrapper__container img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-main #characters .charactersContainer .character .portraitContainerWrapper:hover {
+main #characters .characters-container .character .character__portrait-container-wrapper:hover {
   -webkit-transform: translateY(-20px);
           transform: translateY(-20px);
 }
 
-main #characters .charactersContainer .character.show {
+main #characters .characters-container .character.show {
   -webkit-animation: characterFadeIn 1s forwards;
           animation: characterFadeIn 1s forwards;
 }
 
-main #characters .charactersContainer .character.show:nth-child(1) {
+main #characters .characters-container .character.show:nth-child(1) {
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s;
 }
 
-main #characters .charactersContainer .character.show:nth-child(2) {
+main #characters .characters-container .character.show:nth-child(2) {
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
 }
 
-main #characters .charactersContainer .character.show:nth-child(3) {
+main #characters .characters-container .character.show:nth-child(3) {
   -webkit-animation-delay: 0.6s;
           animation-delay: 0.6s;
 }
 
-main #characters .charactersContainer .character.show:nth-child(4) {
+main #characters .characters-container .character.show:nth-child(4) {
   -webkit-animation-delay: 0.8s;
           animation-delay: 0.8s;
 }
 
-main #characters .charactersContainer .character.show:nth-child(5) {
+main #characters .characters-container .character.show:nth-child(5) {
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
 }
 
-main #characters .charactersContainer .character.show:nth-child(6) {
+main #characters .characters-container .character.show:nth-child(6) {
   -webkit-animation-delay: 1.2s;
           animation-delay: 1.2s;
 }
 
-main #characters .charactersContainer .character.show:nth-child(7) {
+main #characters .characters-container .character.show:nth-child(7) {
   -webkit-animation-delay: 1.4s;
           animation-delay: 1.4s;
 }
 
-main #characters .charactersContainer .character.show:nth-child(8) {
+main #characters .characters-container .character.show:nth-child(8) {
   -webkit-animation-delay: 1.6s;
           animation-delay: 1.6s;
 }
 
-main #characters .charactersContainer .character.show:nth-child(9) {
+main #characters .characters-container .character.show:nth-child(9) {
   -webkit-animation-delay: 1.8s;
           animation-delay: 1.8s;
 }
 
-main #characters .charactersContainer .character.show:nth-child(10) {
+main #characters .characters-container .character.show:nth-child(10) {
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
 }
 
-main #characters .charactersContainer .character.show:nth-child(11) {
+main #characters .characters-container .character.show:nth-child(11) {
   -webkit-animation-delay: 2.2s;
           animation-delay: 2.2s;
 }
 
-main #characters .charactersContainer .character.show:nth-child(12) {
+main #characters .characters-container .character.show:nth-child(12) {
   -webkit-animation-delay: 2.4s;
           animation-delay: 2.4s;
 }
 
-main #characters .charactersContainer .character.show:nth-child(13) {
+main #characters .characters-container .character.show:nth-child(13) {
   -webkit-animation-delay: 2.6s;
           animation-delay: 2.6s;
 }
 
-main #characters .charactersContainer .character.show:nth-child(14) {
+main #characters .characters-container .character.show:nth-child(14) {
   -webkit-animation-delay: 2.8s;
           animation-delay: 2.8s;
 }
 
-main #characters .charactersContainer .character.show:nth-child(15) {
+main #characters .characters-container .character.show:nth-child(15) {
   -webkit-animation-delay: 3s;
           animation-delay: 3s;
 }
 
-main #characters .charactersContainer .character.show:nth-child(16) {
+main #characters .characters-container .character.show:nth-child(16) {
   -webkit-animation-delay: 3.2s;
           animation-delay: 3.2s;
 }
 
-main #characters .charactersContainer .character.show:nth-child(17) {
+main #characters .characters-container .character.show:nth-child(17) {
   -webkit-animation-delay: 3.4s;
           animation-delay: 3.4s;
 }
 
-main #characters .charactersContainer .character.show:nth-child(18) {
+main #characters .characters-container .character.show:nth-child(18) {
   -webkit-animation-delay: 3.6s;
           animation-delay: 3.6s;
 }
 
-main #characters .charactersContainer .character.show:nth-child(19) {
+main #characters .characters-container .character.show:nth-child(19) {
   -webkit-animation-delay: 3.8s;
           animation-delay: 3.8s;
 }
 
-main #characters .charactersContainer .character.show:nth-child(20) {
+main #characters .characters-container .character.show:nth-child(20) {
   -webkit-animation-delay: 4s;
           animation-delay: 4s;
 }
 
-main #characters .charactersContainer .character.show:nth-child(21) {
+main #characters .characters-container .character.show:nth-child(21) {
   -webkit-animation-delay: 4.2s;
           animation-delay: 4.2s;
 }
@@ -1224,11 +1511,11 @@ main #characters .charactersContainer .character.show:nth-child(21) {
   }
 }
 
-main #characters .characterDetails {
+main #characters .character-details {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   padding: 0 200px;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   display: -ms-grid;
@@ -1236,8 +1523,6 @@ main #characters .characterDetails {
   -ms-grid-columns: min-content 1fr;
       grid-template-columns: -webkit-min-content 1fr;
       grid-template-columns: min-content 1fr;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1249,11 +1534,34 @@ main #characters .characterDetails {
   transition: opacity 1s, visibility 0s 1.1s;
 }
 
-main #characters .characterDetails button {
+main #characters .character-details button {
   pointer-events: all;
 }
 
-main #characters .characterDetails .portrait {
+@media screen and (max-width: 1280px) {
+  main #characters .character-details {
+    padding: 0 100px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  main #characters .character-details {
+    padding: 30px 0;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: min-content min-content;
+        grid-template-rows: -webkit-min-content -webkit-min-content;
+        grid-template-rows: min-content min-content;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+main #characters .character-details .character-details__portrait-container {
   width: 334px;
   height: 500px;
   -webkit-transform: translateX(-50px);
@@ -1275,24 +1583,31 @@ main #characters .characterDetails .portrait {
   transition: transform 1s, -webkit-transform 1s;
 }
 
-main #characters .characterDetails .portrait .imgWrapper {
+@media screen and (max-width: 980px) {
+  main #characters .character-details .character-details__portrait-container {
+    width: 150px;
+    height: 225px;
+  }
+}
+
+main #characters .character-details .character-details__portrait-container .character-details__portrait-container__img-wrapper {
   width: calc(100% - 2px);
   height: calc(100% - 2px);
   overflow: hidden;
 }
 
-main #characters .characterDetails .portrait .imgWrapper img {
+main #characters .character-details .character-details__portrait-container .character-details__portrait-container__img-wrapper img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-main #characters .characterDetails .details {
+main #characters .character-details .character-details__details-container {
   padding: 0 40px;
 }
 
-main #characters .characterDetails .details .characterName {
+main #characters .character-details .character-details__details-container .character-details__details-container__character-name {
   font-size: 34px;
   background: linear-gradient(-145deg, #E3C575 10%, #F1DEAE 45%, #E3C575 65%, #9F8762 90%);
   background-clip: text;
@@ -1300,13 +1615,20 @@ main #characters .characterDetails .details .characterName {
   -webkit-text-fill-color: transparent;
 }
 
-main #characters .characterDetails .details p {
+main #characters .character-details .character-details__details-container p {
   padding: 10px 0;
   color: white;
   line-height: calc(1em + 4);
 }
 
-main #characters .characterDetails button {
+@media screen and (max-width: 980px) {
+  main #characters .character-details .character-details__details-container p {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
+main #characters .character-details button {
   width: 80px;
   height: 50px;
   position: absolute;
@@ -1320,14 +1642,14 @@ main #characters .characterDetails button {
   color: #FAE19F;
 }
 
-main #characters .characterDetails.show {
+main #characters .character-details.show {
   visibility: visible;
   opacity: 1;
   -webkit-transition: opacity 1s;
   transition: opacity 1s;
 }
 
-main #characters .characterDetails.show .portrait {
+main #characters .character-details.show .character-details__portrait-container {
   -webkit-transform: translateX(0px);
           transform: translateX(0px);
 }
