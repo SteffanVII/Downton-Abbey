@@ -32,6 +32,10 @@
             gap: 20px;
         }
 
+        @include w640 {
+            gap: 10px;
+        }
+
         .about-content-wrapper__about-show {
             width: 600px;
 
@@ -112,6 +116,10 @@
 
             @include w1024 {
                 bottom: 20px;
+            }
+
+            @include w640 {
+                gap: 7px;
             }
 
             @include w420 {

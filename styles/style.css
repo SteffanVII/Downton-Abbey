@@ -601,6 +601,12 @@ main #about .about-content-wrapper {
   }
 }
 
+@media screen and (max-width: 640px) {
+  main #about .about-content-wrapper {
+    gap: 10px;
+  }
+}
+
 main #about .about-content-wrapper .about-content-wrapper__about-show {
   width: 600px;
   display: -webkit-box;
@@ -704,6 +710,12 @@ main #about .about-content-wrapper a {
 @media screen and (max-width: 1024px) {
   main #about .about-content-wrapper a {
     bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  main #about .about-content-wrapper a {
+    gap: 7px;
   }
 }
 
