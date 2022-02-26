@@ -26,6 +26,7 @@
   -o-font-smoothing: antialiased;
   font-family: Adobe Caslon Pro;
   font-weight: 100;
+  outline: 1px solid red;
 }
 
 body {
@@ -615,6 +616,18 @@ main #about .about-content-wrapper .about-content-wrapper__about-show {
   gap: 30px;
 }
 
+@media screen and (max-width: 870px) {
+  main #about .about-content-wrapper .about-content-wrapper__about-show {
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  main #about .about-content-wrapper .about-content-wrapper__about-show {
+    gap: 10px;
+  }
+}
+
 main #about .about-content-wrapper .about-content-wrapper__about-show p {
   text-align: center;
   font-family: Adobe Caslon Pro;
@@ -626,12 +639,6 @@ main #about .about-content-wrapper .about-content-wrapper__about-show p {
   main #about .about-content-wrapper .about-content-wrapper__about-show p {
     font-size: 12px;
     line-height: 15px;
-  }
-}
-
-@media screen and (max-width: 870px) {
-  main #about .about-content-wrapper .about-content-wrapper__about-show {
-    width: 65%;
   }
 }
 
@@ -748,6 +755,18 @@ main #watch {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  main #watch {
+    padding-top: 100px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  main #watch {
+    padding-top: 80px;
   }
 }
 
@@ -1210,13 +1229,13 @@ main #characters .characters-io {
 
 @media screen and (max-width: 980px) {
   main #characters {
-    padding-top: 90px;
+    padding-top: 100px;
   }
 }
 
 @media screen and (max-width: 640px) {
   main #characters {
-    padding-top: 70px;
+    padding-top: 80px;
   }
 }
 

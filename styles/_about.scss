@@ -40,6 +40,14 @@
             align-items: center;
             gap: 30px;
             
+            @include w870 {
+                width: 65%;
+            }
+
+            @include w640 {
+                gap: 10px
+            }
+            
             p {
                 text-align: center;
                 font-family: Adobe Caslon Pro;
@@ -52,10 +60,6 @@
                 }
             }
 
-            @include w870 {
-                width: 65%;
-            }
-            
             svg {
                 width: 100%;
             }
