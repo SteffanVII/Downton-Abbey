@@ -220,7 +220,7 @@
         display: grid;
         grid-template-columns: min-content 1fr;
         // grid-template-rows: min-content;
-        // justify-content: center;
+        justify-content: center;
         align-items: center;
 
         visibility: hidden;
@@ -240,7 +240,7 @@
         }
 
         @include w980 {
-            padding: 30px 0;
+            padding: 30px;
 
             grid-template-columns: 100%;
             grid-template-rows: min-content min-content;
@@ -266,6 +266,11 @@
                 width: 150px;
                 height: 225px;
             }
+            
+            @include w640 {
+                width: 100px;
+                height: 175px;    
+            }
 
             .character-details__portrait-container__img-wrapper {
                 width: calc(100% - 2px );
@@ -286,12 +291,24 @@
             // height: 100%;
             padding: 0 40px;
 
+            @include w980 {
+                padding: 0;
+                padding-top: 20px;
+
+                font-size: 12px;
+                line-height: 15px;
+            }
+
             .character-details__details-container__character-name {
                 font-size: 34px;
                 background: $dropdownBG;
                 background-clip: text;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
+
+                @include w640 {
+                    font-size: 22px;
+                }
             }
 
             p {
@@ -300,10 +317,10 @@
                 color: white;
                 line-height: calc(1em + 4);
 
-                @include w980 {
-                    font-size: 12px;
-                    line-height: 15px;
-                }
+                // @include w980 {
+                //     font-size: 12px;
+                //     line-height: 15px;
+                // }
             }
 
         }
