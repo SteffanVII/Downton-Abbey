@@ -320,7 +320,7 @@ main {
 
 main section {
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   scroll-snap-align: start;
 }
 
@@ -745,7 +745,7 @@ main #watch {
 
 main #watch .watch-io {
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   position: absolute;
   top: 0;
   visibility: hidden;
@@ -772,6 +772,12 @@ main #watch .seasons-header {
 @media screen and (max-width: 1024px) {
   main #watch .seasons-header {
     padding: 0px 60px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  main #watch .seasons-header {
+    padding: 0px 20px;
   }
 }
 
@@ -881,6 +887,7 @@ main #watch .seasons-header .season-header__details {
     display: -ms-flexbox;
     display: flex;
     gap: 0px;
+    padding-top: 0;
   }
 }
 
@@ -1179,7 +1186,7 @@ main #characters {
 
 main #characters .characters-io {
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   position: absolute;
   top: 0;
   visibility: hidden;
@@ -1190,6 +1197,18 @@ main #characters .characters-io {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  main #characters {
+    padding-top: 90px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  main #characters {
+    padding-top: 70px;
   }
 }
 

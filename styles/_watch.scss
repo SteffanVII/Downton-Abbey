@@ -22,7 +22,7 @@
 
     .watch-io {
         width: 100%;
-        height: 100vh;
+        height: 90vh;
 
         position: absolute;
         top: 0;
@@ -44,6 +44,10 @@
         
         @include w1024 {
             padding: 0px 60px;
+        }
+
+        @include w640 {
+            padding: 0px 20px;
         }
 
         p {
@@ -140,6 +144,7 @@
             @include w640 {
                 display: flex;
                 gap: 0px;
+                padding-top: 0;
             }
 
             .season-header__details__poster {

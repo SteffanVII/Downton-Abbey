@@ -22,15 +22,16 @@ let ioAboutWatchCharacter = new IntersectionObserver( (entries) => {
             if ( entry.intersectionRatio < 1 ) {
                 if ( entry.target === els.about ) {
                     els.aboutContentWrapper.classList.remove('show');
-                } else if ( entry.target === els.watch ) {
-                    if ( entry.intersectionRatio * els.watch.clientHeight < document.documentElement.clientHeight ) {
-                        els.watch.classList.remove('show');
-                    }
-                } else if ( entry.target === els.characters ) {
-                    if ( entry.intersectionRatio * els.characters.clientHeight < document.documentElement.clientHeight ) {
-                        els.characters.classList.remove('show');
-                    }
-                }
+                } 
+                // else if ( entry.target === els.watch ) {
+                //     if ( entry.intersectionRatio * els.watch.clientHeight < document.documentElement.clientHeight ) {
+                //         els.watch.classList.remove('show');
+                //     }
+                // } else if ( entry.target === els.characters ) {
+                //     if ( entry.intersectionRatio * els.characters.clientHeight < document.documentElement.clientHeight ) {
+                //         els.characters.classList.remove('show');
+                //     }
+                // }
             } else if ( entry.intersectionRatio == 0 ) {
                 if ( entry.target === els.about ) {
                     els.aboutContentWrapper.classList.remove('show');
@@ -46,6 +47,8 @@ let ioAboutWatchCharacter = new IntersectionObserver( (entries) => {
                     Array.from(document.querySelectorAll('.episode')).forEach( ep => {
                         ep.classList.remove('show');
                     } )
+                    els.watch.classList.remove('show');
+                    els.characters.classList.remove('show');
                 } else if ( entry.target === els.watchIO ) {
                     els.watch.classList.add('show');
                     Array.from(document.querySelectorAll('.episode')).forEach( ep => {
@@ -54,6 +57,7 @@ let ioAboutWatchCharacter = new IntersectionObserver( (entries) => {
                     Array.from(els.charactersContainer.querySelectorAll('.character')).forEach( char => {
                         char.classList.remove('show');
                     } );
+                    els.characters.classList.remove('show');
                 } else if ( entry.target === els.charactersIO ) {
                     els.characters.classList.add('show');
                     Array.from(document.querySelectorAll('.episode')).forEach( ep => {
@@ -62,6 +66,7 @@ let ioAboutWatchCharacter = new IntersectionObserver( (entries) => {
                     Array.from(els.charactersContainer.querySelectorAll('.character')).forEach( char => {
                         char.classList.add('show');
                     } );
+                    els.watch.classList.remove('show');
                 } else if ( entry.target === els.movies ) {
                     Array.from(els.charactersContainer.querySelectorAll('.character')).forEach( char => {
                         char.classList.remove('show');
@@ -71,7 +76,7 @@ let ioAboutWatchCharacter = new IntersectionObserver( (entries) => {
         }
     } )
 }, {
-    threshold: [0 ,0.98 ,1]
+    threshold: [0, 0.98, 1]
 } )
 
 ioHero.observe(els.hero);
