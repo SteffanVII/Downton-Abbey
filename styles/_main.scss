@@ -12,6 +12,17 @@ main {
         width: 100%;
         height: 100vh;
         scroll-snap-align: start;
+
+        .io {
+            width: 100%;
+            height: 50vh;
+    
+            outline: 1px solid $outline;
+    
+            position: absolute;
+            top: 70px;
+            visibility: $v;
+        }
     }
 
     canvas {
@@ -21,12 +32,16 @@ main {
         position: absolute;
         top: 0;
         left: 0;
-        z-index: -1;
+        z-index: 1000;
+        // z-index: -1;
+
+        pointer-events: none
     }
 
     @import "hero";
     @import "about";
     @import "watch";
     @import "characters";
+    @import "movies";
 
 }

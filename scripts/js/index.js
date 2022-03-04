@@ -36,9 +36,9 @@ let ioAboutWatchCharacter = new IntersectionObserver( (entries) => {
                 if ( entry.target === els.aboutIO ) {
                     els.aboutContentWrapper.classList.remove('show');
                 } else if ( entry.target === els.watchIO ) {
-                    els.watch.classList.remove('show');
+                    els.watchWrapper.classList.remove('show');
                 } else if ( entry.target === els.charactersIO ) {
-                    els.characters.classList.remove('show');
+                    els.charactersWrapper.classList.remove('show');
                 }
             }
             else {
@@ -47,26 +47,26 @@ let ioAboutWatchCharacter = new IntersectionObserver( (entries) => {
                     Array.from(document.querySelectorAll('.episode')).forEach( ep => {
                         ep.classList.remove('show');
                     } )
-                    els.watch.classList.remove('show');
-                    els.characters.classList.remove('show');
+                    els.watchWrapper.classList.remove('show');
+                    els.charactersWrapper.classList.remove('show');
                 } else if ( entry.target === els.watchIO ) {
-                    els.watch.classList.add('show');
+                    els.watchWrapper.classList.add('show');
                     Array.from(document.querySelectorAll('.episode')).forEach( ep => {
                         ep.classList.add('show');
                     } )
                     Array.from(els.charactersContainer.querySelectorAll('.character')).forEach( char => {
                         char.classList.remove('show');
                     } );
-                    els.characters.classList.remove('show');
+                    els.charactersWrapper.classList.remove('show');
                 } else if ( entry.target === els.charactersIO ) {
-                    els.characters.classList.add('show');
+                    els.charactersWrapper.classList.add('show');
                     Array.from(document.querySelectorAll('.episode')).forEach( ep => {
                         ep.classList.remove('show');
                     } )
                     Array.from(els.charactersContainer.querySelectorAll('.character')).forEach( char => {
                         char.classList.add('show');
                     } );
-                    els.watch.classList.remove('show');
+                    els.watchWrapper.classList.remove('show');
                 } else if ( entry.target === els.movies ) {
                     Array.from(els.charactersContainer.querySelectorAll('.character')).forEach( char => {
                         char.classList.remove('show');
@@ -150,7 +150,6 @@ function makeEpisode( episode, thumbnail, episodeDetail, initial) {
     let container = document.querySelector('.season-episodes');
 
     let init = initial ? "" : "show";
-    console.log(init);
 
     let div = document.createElement('div');
     container.appendChild(div);

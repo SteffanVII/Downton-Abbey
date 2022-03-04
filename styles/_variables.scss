@@ -4,9 +4,15 @@ $gold3: #fcf2d9;
 $goldLG1: linear-gradient(to left,#E3C575 10%, #F1DEAE  45%, #E3C575 65%, #9F8762 80%);
 $dropdownBG: linear-gradient(-145deg,#E3C575 10%, #F1DEAE  45%, #E3C575 65%, #9F8762 90%);
 
+$outline: red;
+$v: hidden;
+
 :root {
     // font-family: Adobe Caslon Pro;
     background-color: black;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url('../Assets/Backgrounds/downton-abbey-bg-1.jpg');
+    background-size:cover;
+    background-position: center;
 }
 
 *,
@@ -38,7 +44,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-    background-color: transparent;
+    background-color: black;
 }
 
 ::-webkit-scrollbar-thumb {

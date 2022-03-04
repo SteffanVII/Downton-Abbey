@@ -1,0 +1,68 @@
+#movies {
+    height: 100vh;
+
+    position: relative;
+
+    background: rgba(0, 0, 0, 0.85);
+
+    .trailers-container {
+        height: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+
+        @include w870 {
+            flex-flow: column;
+        }
+
+        .trailer {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+
+            .movie-title { 
+                width: fit-content;
+
+                display: inline-block;
+
+                font-size: 34px;
+                color: white;
+                background: $dropdownBG;
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+
+                @include w1024 {
+                    font-size: 28px;
+                }
+
+                @include w420 {
+                    font-size: 24px;
+                }
+            }
+
+            iframe {
+                @include w1280 {
+                    width: 480px;
+                    height: 270px;
+                }
+
+                @include w1024 {
+                    width: 360px;
+                    height: 203px;
+                }
+
+                @include w420 {
+                    width: 320px;
+                    height: 180px;
+                }
+            }
+
+            
+        }
+
+    }
+
+}
